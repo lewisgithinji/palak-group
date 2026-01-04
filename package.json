@@ -1,0 +1,29 @@
+{
+  "name": "palak-group-websites",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Palak Group - Multi-company website monorepo",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "dev:palak-group": "turbo run dev --filter=palak-group",
+    "dev:palak-elevators": "turbo run dev --filter=palak-elevators",
+    "dev:preedos-kenya": "turbo run dev --filter=preedos-kenya",
+    "dev:palak-steel": "turbo run dev --filter=palak-steel",
+    "dev:palak-developers": "turbo run dev --filter=palak-developers",
+    "build:palak-group": "turbo run build --filter=palak-group",
+    "build:palak-elevators": "turbo run build --filter=palak-elevators",
+    "build:preedos-kenya": "turbo run build --filter=preedos-kenya",
+    "build:palak-steel": "turbo run build --filter=palak-steel",
+    "build:palak-developers": "turbo run build --filter=palak-developers"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.0"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

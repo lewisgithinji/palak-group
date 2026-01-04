@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-brand="palak-developers">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Palak Developers for property development inquiries.">
+
+    <title>Contact Us - Palak Developers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <nav class="nav">
+                <a href="/" class="nav-brand">
+                    <div class="logo-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#d97706" />
+                            <path d="M10 32V14l10-6 10 6v18H10zm4-4h4v6h-4v-6zm8 0h4v6h-4v-6zm-6-6h4v4h-4v-4z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <span>Palak Developers</span>
+                </a>
+
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/about.html" class="nav-link">About</a></li>
+                    <li><a href="/contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+
+                <button class="nav-toggle"
+                    aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title" data-animate="fade-up">Contact Us</h1>
+            <p class="page-subtitle" data-animate="fade-up">Inquire about our developments</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-wrapper" data-animate="fade-right">
+                    <h2>Get In Touch</h2>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--space-6);">Interested in our
+                        properties? Send us a message.</p>
+
+                    <form id="contact-form" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input"
+                                    placeholder="+254 700 000 000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="interest">I'm Interested In</label>
+                            <select id="interest" name="interest" class="form-input">
+                                <option value="">Select an option</option>
+                                <option value="residential">Residential Properties</option>
+                                <option value="commercial">Commercial Properties</option>
+                                <option value="investment">Investment Opportunities</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-input" rows="5"
+                                placeholder="Tell us what you're looking for..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-full">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info" data-animate="fade-left">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.88.3 1.76.52 2.62a2 2 0 0 1-.45 1.67l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 1.67-.45c.86.22 1.74.39 2.62.52a2 2 0 0 1 1.72 2z" />
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+254700000000">+254 700 000 000</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:info@palakdevelopers.co.ke">info@palakdevelopers.co.ke</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office</h4>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Palak Developers. Part of <a href="https://palakgroup.co.ke"
+                        style="color: var(--color-accent);">The Palak Group</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

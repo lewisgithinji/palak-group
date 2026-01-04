@@ -1,0 +1,19 @@
+{
+    "name": "palak-developers",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Palak Developers - Property Development Website",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "vite": "^6.0.0"
+    },
+    "dependencies": {
+        "@palak/styles": "workspace:*",
+        "@palak/ui": "workspace:*"
+    }
+}
