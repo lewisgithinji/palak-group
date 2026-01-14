@@ -2,7 +2,7 @@
 
 ## Quick Start Guide
 
-Follow these steps to deploy your 5 websites to Cloudflare Pages.
+Follow these steps to deploy your 3 websites to Cloudflare Pages.
 
 ---
 
@@ -36,7 +36,7 @@ Follow these steps to deploy your 5 websites to Cloudflare Pages.
 
 ## Step 3: Create Cloudflare Pages Projects
 
-You need to create 5 separate projects in Cloudflare Pages:
+You need to create 3 separate projects in Cloudflare Pages:
 
 ### Via Cloudflare Dashboard
 
@@ -44,29 +44,19 @@ You need to create 5 separate projects in Cloudflare Pages:
 2. Click **Create a project**
 3. Click **Connect to Git** → Select GitHub → Select `lewisgithinji/palak-group`
 
-### Create these 5 projects:
+### Create these 3 projects:
 
-#### Project 1: Palak Group
-- **Project name**: `palak-group`
-- **Build command**: `cd apps/palak-group && npm run build`
-- **Build output**: `apps/palak-group/dist`
-
-#### Project 2: Palak Steel
+#### Project 1: Palak Steel
 - **Project name**: `palak-steel`
 - **Build command**: `cd apps/palak-steel && npm run build`
 - **Build output**: `apps/palak-steel/dist`
 
-#### Project 3: Palak Elevators
-- **Project name**: `palak-elevators`
-- **Build command**: `cd apps/palak-elevators && npm run build`
-- **Build output**: `apps/palak-elevators/dist`
-
-#### Project 4: Preedos Kenya
+#### Project 2: Preedos Kenya
 - **Project name**: `preedos-kenya`
 - **Build command**: `cd apps/preedos-kenya && npm run build`
 - **Build output**: `apps/preedos-kenya/dist`
 
-#### Project 5: Palak Developers
+#### Project 3: Palak Developers
 - **Project name**: `palak-developers`
 - **Build command**: `cd apps/palak-developers && npm run build`
 - **Build output**: `apps/palak-developers/dist`
@@ -103,9 +93,7 @@ After pushing, GitHub Actions will automatically deploy on every push to `main`.
 
 After deployment, your sites will be at:
 
-- **Palak Group**: https://palak-group.pages.dev
 - **Palak Steel**: https://palak-steel.pages.dev
-- **Palak Elevators**: https://palak-elevators.pages.dev
 - **Preedos Kenya**: https://preedos-kenya.pages.dev
 - **Palak Developers**: https://palak-developers.pages.dev
 

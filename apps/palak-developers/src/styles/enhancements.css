@@ -1,0 +1,103 @@
+/* ==============================================
+   SERVICES SECTION ENHANCEMENTS
+   ============================================== */
+
+/* Service Card Hover Effects */
+.service-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 60px rgba(255, 168, 38, 0.25) !important;
+}
+
+.service-card .service-icon {
+    transition: all 0.4s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(135deg, var(--buildex-primary-color) 0%, #ff8c00 100%);
+}
+
+.service-card h3 {
+    transition: color 0.3s ease;
+}
+
+.service-card:hover h3 {
+    color: var(--buildex-primary-color);
+}
+
+.service-card a {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover a {
+    transform: translateX(5px);
+}
+
+.service-card a::after {
+    content: '→';
+    position: absolute;
+    right: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover a::after {
+    opacity: 1;
+    right: -25px;
+}
+
+/* ==============================================
+   ABOUT SECTION STATISTICS
+   ============================================== */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 25px 20px;
+    background: rgba(255, 168, 38, 0.08);
+    border-radius: 8px;
+    border-left: 4px solid var(--buildex-primary-color);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 168, 38, 0.15);
+}
+
+.stat-number {
+    font-family: var(--buildex-primary-font);
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--buildex-primary-color);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.stat-label {
+    font-size: 15px;
+    color: var(--buildex-grey-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Stats */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}

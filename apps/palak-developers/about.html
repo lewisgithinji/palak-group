@@ -5,116 +5,980 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="About Palak Developers - Building modern residential and commercial spaces across Kenya.">
+        content="About Palak Developers - Building modern residential and commercial spaces across Kenya since 1999.">
 
     <title>About Us - Palak Developers</title>
 
+    <!-- Buildex Fonts: Space Grotesk + DM Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Rubik:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/styles/main.css">
+    <!-- Buildex Theme CSS -->
+    <link rel="stylesheet" href="./src/styles/buildex.css">
+    <link rel="stylesheet" href="./src/styles/enhancements.css">
+    <link rel="stylesheet" href="./src/styles/mobile-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-container">
-            <nav class="nav">
-                <a href="/" class="nav-brand">
-                    <div class="logo-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="8" fill="#d97706" />
-                            <path d="M10 32V14l10-6 10 6v18H10zm4-4h4v6h-4v-6zm8 0h4v6h-4v-6zm-6-6h4v4h-4v-4z"
-                                fill="white" />
-                        </svg>
+    <header class="site-header">
+        <div class="navigation-wrapper">
+            <div class="container-fluid">
+                <div class="main-header-wrapper">
+                    <!-- Logo Section -->
+                    <div class="site-logo">
+                        <a href="/">
+                            <div class="logo-icon">
+                                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 32V14l10-6 10 6v18H10zm4-4h4v6h-4v-6zm8 0h4v6h-4v-6zm-6-6h4v4h-4v-4z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <span class="logo-text">Palak Developers</span>
+                        </a>
                     </div>
-                    <span>Palak Developers</span>
-                </a>
 
-                <ul class="nav-menu">
-                    <li><a href="/" class="nav-link">Home</a></li>
-                    <li><a href="/about.html" class="nav-link active">About</a></li>
-                    <li><a href="/contact.html" class="nav-link">Contact</a></li>
-                </ul>
+                    <div class="main-header-items">
+                        <!-- Top Header -->
+                        <div class="top-header">
+                            <ul class="top-left">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                    <span>0791 240 000</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                    <a href="mailto:info@palakdevelopers.ke">info@palakdevelopers.ke</a>
+                                </li>
+                            </ul>
+                            <div class="top-right">
+                                <ul class="top-header-nav">
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Faqs</a></li>
+                                </ul>
+                                <ul class="header-social-share">
+                                    <li><a href="#"><svg viewBox="0 0 320 512" fill="currentColor">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                            </svg></a></li>
+                                    <li><a href="#"><svg viewBox="0 0 512 512" fill="currentColor">
+                                                <path
+                                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                                            </svg></a></li>
+                                    <li><a href="#"><svg viewBox="0 0 448 512" fill="currentColor">
+                                                <path
+                                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a90.25,90.25,0,1,0,43.7,77.81V73.27A210.15,210.15,0,0,0,432.33,121.49l.06.06a209.44,209.44,0,0,0,15.61,4.19Z" />
+                                            </svg></a></li>
+                                    <li><a href="#"><svg viewBox="0 0 576 512" fill="currentColor">
+                                                <path
+                                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.996 48.284 48.277C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.281 42.003-24.627 48.284-48.277 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                                            </svg></a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                <button class="nav-toggle"
-                    aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-            </nav>
+                        <!-- Navigation Wrap -->
+                        <div class="navigation-wrap">
+                            <nav class="navigation-menu">
+                                <ul class="main-menu">
+                                    <li class="menu-item"><a href="/">Home</a></li>
+                                    <li class="menu-item has-dropdown">
+                                        <a href="about.html" class="active">Company</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="team.html">Our Team</a></li>
+                                            <li><a href="faq.html">FAQ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a href="services.html">Services</a></li>
+                                    <li class="menu-item"><a href="projects.html">Projects</a></li>
+                                    <li class="menu-item"><a href="blog.html">Blog</a></li>
+                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header-right">
+                                <div class="dl-search-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </div>
+                                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <a href="contact.html" class="default-btn">GET SOLUTION</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="page-hero">
-        <div class="container">
-            <h1 class="page-title" data-animate="fade-up">About Palak Developers</h1>
-            <p class="page-subtitle" data-animate="fade-up">Building modern Kenya since 2009</p>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+
+    <!--
+
+ Page Hero -->
+    <section
+        style="background: linear-gradient(rgba(26, 29, 46, 0.85), rgba(26, 29, 46, 0.85)), url('/images/project-1.png'); background-size: cover; background-position: center; padding: 120px 0 80px; margin-top: 0;">
+        <div class="container" style="max-width: 1320px; margin: 0 auto; padding: 0 15px; text-align: center;">
+            <h1
+                style="font-family: var(--buildex-primary-font); font-size: 56px; font-weight: 700; color: white; margin-bottom: 20px;">
+                About Palak Developers
+            </h1>
+            <p
+                style="color: rgba(255,255,255,0.9); font-size: 20px; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Building modern Kenya with quality, integrity, and innovation since 1999
+            </p>
+            <div
+                style="display: flex; align-items: center; justify-content: center; gap: 10px; color: rgba(255,255,255,0.6); font-size: 14px;">
+                <a href="/" style="color: rgba(255,255,255,0.6); text-decoration: none;">Home</a>
+                <span>/</span>
+                <span style="color: #FFA826;">About Us</span>
+            </div>
         </div>
     </section>
 
-    <section class="section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content" data-animate="fade-right">
-                    <span class="section-label">Our Story</span>
-                    <h2 class="section-title text-left">Quality Construction</h2>
-                    <p>Palak Developers is a premier property development company dedicated to creating exceptional
-                        residential and commercial spaces that define the future of urban living in Kenya.</p>
-                    <p>As part of The Palak Group, we bring decades of construction expertise and a commitment to
-                        quality that has made our projects stand out in the market.</p>
-                    <p>From modern apartments to commercial complexes, every project we undertake reflects our
-                        dedication to craftsmanship, sustainability, and community development.</p>
+    <!-- Company Story Section -->
+    <section class="section" style="padding: 120px 0; background: white;">
+        <div class="container" style="max-width: 1320px; margin: 0 auto; padding: 0 15px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div class="about-content">
+                    <div class="sub-heading is-border" style="margin-bottom: 15px;">
+                        <div class="dl-cap"
+                            style="color: #FFA826; font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">
+                            Our Story
+                        </div>
+                    </div>
+                    <h2
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 46px; font-weight: 700; color: #1A1D2E; line-height: 1.2; margin-bottom: 30px;">
+                        Building Dreams Into <span style="color: #FFA826;">Reality</span>
+                    </h2>
+                    <p style="color: #4a5568; font-size: 17px; line-height: 1.9; margin-bottom: 22px;">
+                        Palak Developers was founded in 1999 with a simple yet powerful vision: to create exceptional
+                        living and working spaces that enhance the quality of life for Kenyans. As part of The Palak
+                        Group,
+                        we bring decades of construction expertise and a commitment to excellence.
+                    </p>
+                    <p style="color: #4a5568; font-size: 17px; line-height: 1.9; margin-bottom: 22px;">
+                        Over the past 25 years, we've grown from a small construction firm to one of Kenya's most
+                        trusted
+                        developers. Our portfolio spans residential apartments, commercial complexes, mixed-use
+                        developments,
+                        and infrastructure projects across Nairobi, Mombasa, Kisumu, and beyond.
+                    </p>
+                    <p style="color: #4a5568; font-size: 17px; line-height: 1.9; margin-bottom: 30px;">
+                        What sets us apart is our unwavering commitment to quality, sustainability, and customer
+                        satisfaction.
+                        Every project we undertake reflects our dedication to craftsmanship and our belief that great
+                        spaces
+                        create great communities.
+                    </p>
+
+                    <!-- Quick Facts -->
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-top: 35px;">
+                        <div
+                            style="padding: 20px; background: rgba(255, 168, 38, 0.05); border-left: 4px solid #FFA826; border-radius: 0 8px 8px 0;">
+                            <div
+                                style="font-size: 32px; font-weight: 700; color: #FFA826; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 5px;">
+                                25+</div>
+                            <div style="color: #4a5568; font-size: 14px; font-weight: 500;">Years of Excellence</div>
+                        </div>
+                        <div
+                            style="padding: 20px; background: rgba(255, 168, 38, 0.05); border-left: 4px solid #FFA826; border-radius: 0 8px 8px 0;">
+                            <div
+                                style="font-size: 32px; font-weight: 700; color: #FFA826; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 5px;">
+                                1000+</div>
+                            <div style="color: #4a5568; font-size: 14px; font-weight: 500;">Units Delivered</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-image" data-animate="fade-left">
-                    <img src="/images/hero-bg.png" alt="Construction project" class="about-img">
+                <div class="about-image">
+                    <div style="position: relative;">
+                        <img src="/images/project-1.png" alt="Construction team"
+                            style="width: 100%; border-radius: 15px; box-shadow: 0 25px 70px rgba(0,0,0,0.2);">
+                        <!-- Floating Card -->
+                        <div
+                            style="position: absolute; bottom: -30px; right: -30px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 20px 60px rgba(0,0,0,0.15); max-width: 250px;">
+                            <div style="font-size: 14px; color: #FFA826; font-weight: 600; margin-bottom: 8px;">
+                                CERTIFIED BY</div>
+                            <div
+                                style="font-size: 18px; font-weight: 700; color: #1A1D2E; font-family: 'Barlow Condensed', sans-serif;">
+                                National Construction Authority</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-primary text-white">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item" data-animate="fade-up">
-                    <span class="stat-number text-accent" data-counter="1000" data-suffix="+">0</span>
-                    <span class="stat-label">Units Developed</span>
+    <!-- Company Values Section -->
+    <section style="padding: 100px 0; background: #f8f9fa;">
+        <div class="container" style="max-width: 1320px; margin: 0 auto; padding: 0 15px;">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <div
+                    style="color: #FFA826; font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 15px;">
+                    Our Core Values
                 </div>
-                <div class="stat-item" data-animate="fade-up" style="animation-delay: 100ms;">
-                    <span class="stat-number text-accent" data-counter="15" data-suffix="+">0</span>
-                    <span class="stat-label">Years Experience</span>
+                <h2
+                    style="font-family: 'Barlow Condensed', sans-serif; font-size: 46px; font-weight: 700; color: #1A1D2E; margin-bottom: 20px;">
+                    What <span style="color: #FFA826;">Drives Us</span>
+                </h2>
+                <p style="color: #4a5568; font-size: 18px; max-width: 700px; margin: 0 auto;">
+                    Our values are the foundation of everything we do, guiding every decision and every project
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;">
+                <!-- Value 1 -->
+                <div
+                    style="background: white; padding: 40px 30px; border-radius: 12px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; border-top: 4px solid #FFA826;">
+                    <div
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(255,168,38,0.1), rgba(255,168,38,0.05)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#FFA826" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: #1A1D2E; margin-bottom: 12px;">
+                        Quality</h3>
+                    <p style="color: #4a5568; font-size: 15px; line-height: 1.7;">We never compromise on quality, using
+                        premium materials and skilled craftsmanship</p>
                 </div>
-                <div class="stat-item" data-animate="fade-up" style="animation-delay: 200ms;">
-                    <span class="stat-number text-accent" data-counter="20" data-suffix="+">0</span>
-                    <span class="stat-label">Projects Completed</span>
+
+                <!-- Value 2 -->
+                <div
+                    style="background: white; padding: 40px 30px; border-radius: 12px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; border-top: 4px solid #FFA826;">
+                    <div
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(255,168,38,0.1), rgba(255,168,38,0.05)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#FFA826" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: #1A1D2E; margin-bottom: 12px;">
+                        Integrity</h3>
+                    <p style="color: #4a5568; font-size: 15px; line-height: 1.7;">Honesty and transparency in all our
+                        dealings, earning trust through actions</p>
                 </div>
-                <div class="stat-item" data-animate="fade-up" style="animation-delay: 300ms;">
-                    <span class="stat-number text-accent" data-counter="100" data-suffix="%">0</span>
-                    <span class="stat-label">Client Satisfaction</span>
+
+                <!-- Value 3 -->
+                <div
+                    style="background: white; padding: 40px 30px; border-radius: 12px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; border-top: 4px solid #FFA826;">
+                    <div
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(255,168,38,0.1), rgba(255,168,38,0.05)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#FFA826" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: #1A1D2E; margin-bottom: 12px;">
+                        Innovation</h3>
+                    <p style="color: #4a5568; font-size: 15px; line-height: 1.7;">Embracing modern construction
+                        technologies and sustainable building practices</p>
+                </div>
+
+                <!-- Value 4 -->
+                <div
+                    style="background: white; padding: 40px 30px; border-radius: 12px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; border-top: 4px solid #FFA826;">
+                    <div
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(255,168,38,0.1), rgba(255,168,38,0.05)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#FFA826" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: #1A1D2E; margin-bottom: 12px;">
+                        Customer Focus</h3>
+                    <p style="color: #4a5568; font-size: 15px; line-height: 1.7;">Your vision and satisfaction are at
+                        the heart of every project we undertake</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta">
-        <div class="container">
-            <h2 class="cta-title" data-animate="fade-up">Interested in Our Projects?</h2>
-            <p class="cta-text" data-animate="fade-up">Contact us to learn about current and upcoming developments.</p>
-            <div class="cta-actions" data-animate="fade-up">
-                <a href="/contact.html" class="btn btn-white btn-lg">Contact Us</a>
+    <!-- Company Timeline -->
+    <section style="padding: 100px 0; background: white;">
+        <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 15px;">
+            <div style="text-align: center; margin-bottom: 70px;">
+                <div
+                    style="color: #FFA826; font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 15px;">
+                    Our Journey
+                </div>
+                <h2
+                    style="font-family: 'Barlow Condensed', sans-serif; font-size: 46px; font-weight: 700; color: #1A1D2E;">
+                    25 Years of <span style="color: #FFA826;">Excellence</span>
+                </h2>
+            </div>
+
+            <!-- Timeline -->
+            <div style="position: relative;">
+                <!-- Vertical Line -->
+                <div
+                    style="position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #FFA826, rgba(255,168,38,0.3)); transform: translateX(-50%);">
+                </div>
+
+                <!-- Timeline Items -->
+                <div style="position: relative;">
+                    <!-- 1999 -->
+                    <div
+                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; align-items: center;">
+                        <div style="text-align: right; padding-right: 40px;">
+                            <div
+                                style="font-size: 42px; font-weight: 700; color: #FFA826; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 12px;">
+                                1999</div>
+                            <h4
+                                style="font-size: 22px; font-weight: 700; color: #1A1D2E; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 10px;">
+                                Company Founded</h4>
+                            <p style="color: #4a5568; font-size: 16px; line-height: 1.7;">Palak Developers established
+                                with a vision to transform Kenya's construction landscape</p>
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <!-- 2005 -->
+                    <div
+                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; align-items: center;">
+                        <div></div>
+                        <div style="padding-left: 40px;">
+                            <div
+                                style="font-size: 42px; font-weight: 700; color: #FFA826; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 12px;">
+                                2005</div>
+                            <h4
+                                style="font-size: 22px; font-weight: 700; color: #1A1D2E; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 10px;">
+                                First Major Project</h4>
+                            <p style="color: #4a5568; font-size: 16px; line-height: 1.7;">Completed our first major
+                                residential complex in Nairobi with 120 units</p>
+                        </div>
+                    </div>
+
+                    <!-- 2012 -->
+                    <div
+                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; align-items: center;">
+                        <div style="text-align: right; padding-right: 40px;">
+                            <div
+                                style="font-size: 42px; font-weight: 700; color: #FFA826; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 12px;">
+                                2012</div>
+                            <h4
+                                style="font-size: 22px; font-weight: 700; color: #1A1D2E; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 10px;">
+                                Regional Expansion</h4>
+                            <p style="color: #4a5568; font-size: 16px; line-height: 1.7;">Expanded operations to Mombasa
+                                and Kisumu, broadening our regional footprint</p>
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <!-- 2018 -->
+                    <div
+                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; align-items: center;">
+                        <div></div>
+                        <div style="padding-left: 40px;">
+                            <div
+                                style="font-size: 42px; font-weight: 700; color: #FFA826; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 12px;">
+                                2018</div>
+                            <h4
+                                style="font-size: 22px; font-weight: 700; color: #1A1D2E; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 10px;">
+                                Green Building Pioneer</h4>
+                            <p style="color: #4a5568; font-size: 16px; line-height: 1.7;">Became one of the first
+                                developers to achieve EDGE certification in Kenya</p>
+                        </div>
+                    </div>
+
+                    <!-- 2024 -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                        <div style="text-align: right; padding-right: 40px;">
+                            <div
+                                style="font-size: 42px; font-weight: 700; color: #FFA826; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 12px;">
+                                2024</div>
+                            <h4
+                                style="font-size: 22px; font-weight: 700; color: #1A1D2E; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 10px;">
+                                Industry Leader</h4>
+                            <p style="color: #4a5568; font-size: 16px; line-height: 1.7;">Reached milestone of 1000+
+                                units developed and 500+ projects completed</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
+    <!-- Why Choose Us Section -->
+    <section style="padding: 100px 0; background: linear-gradient(135deg, #1A1D2E 0%, #2c3e50 100%); color: white;">
+        <div class="container" style="max-width: 1320px; margin: 0 auto; padding: 0 15px;">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <div
+                    style="color: #FFA826; font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 15px;">
+                    Why Choose Us
+                </div>
+                <h2
+                    style="font-family: 'Barlow Condensed', sans-serif; font-size: 46px; font-weight: 700; margin-bottom: 20px;">
+                    Your Trusted <span style="color: #FFA826;">Construction Partner</span>
+                </h2>
+                <p style="color: rgba(255,255,255,0.8); font-size: 18px; max-width: 700px; margin: 0 auto;">
+                    What makes Palak Developers the preferred choice for discerning clients across Kenya
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px;">
+                <div
+                    style="background: rgba(255,255,255,0.05); padding: 35px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFA826, #FF8C00); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <polyline points="9 11 12 14 22 4" />
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 12px;">
+                        Proven Track Record</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.8;">25+ years of successful
+                        project delivery with 100% client satisfaction rate</p>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.05); padding: 35px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFA826, #FF8C00); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 12px;">
+                        Competitive Pricing</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.8;">Transparent pricing with
+                        no hidden costs, delivering maximum value for your investment</p>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.05); padding: 35px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFA826, #FF8C00); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                            <line x1="12" y1="22.08" x2="12" y2="12" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 12px;">
+                        Premium Materials</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.8;">We use only the highest
+                        quality materials sourced from certified suppliers</p>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.05); padding: 35px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFA826, #FF8C00); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 12px;">
+                        Timely Delivery</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.8;">We pride ourselves on
+                        meeting deadlines and delivering projects on schedule</p>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.05); padding: 35px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFA826, #FF8C00); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 12px;">
+                        After-Sales Support</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.8;">Comprehensive warranty
+                        and ongoing maintenance support for all our projects</p>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.05); padding: 35px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <div
+                        style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFA826, #FF8C00); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </div>
+                    <h3
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 12px;">
+                        NCA Certified</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.8;">Full accreditation from
+                        National Construction Authority and adherence to all regulations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section style="background: #FFA826; padding: 90px 0; color: white;">
+        <div class="container" style="max-width: 1320px; margin: 0 auto; padding: 0 15px;">
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 50px; text-align: center;">
+                <div>
+                    <div
+                        style="font-size: 56px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 10px;">
+                        25+</div>
+                    <div style="font-size: 16px; font-weight: 500; opacity: 0.95;">Years of Experience</div>
+                </div>
+                <div>
+                    <div
+                        style="font-size: 56px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 10px;">
+                        500+</div>
+                    <div style="font-size: 16px; font-weight: 500; opacity: 0.95;">Projects Completed</div>
+                </div>
+                <div>
+                    <div
+                        style="font-size: 56px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 10px;">
+                        1000+</div>
+                    <div style="font-size: 16px; font-weight: 500; opacity: 0.95;">Units Developed</div>
+                </div>
+                <div>
+                    <div
+                        style="font-size: 56px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 10px;">
+                        100%</div>
+                    <div style="font-size: 16px; font-weight: 500; opacity: 0.95;">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Preview Section -->
+    <section style="padding: 100px 0; background: white;">
+        <div class="container" style="max-width: 1320px; margin: 0 auto; padding: 0 15px;">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <div
+                    style="color: #FFA826; font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 15px;">
+                    Our Leadership
+                </div>
+                <h2
+                    style="font-family: 'Barlow Condensed', sans-serif; font-size: 46px; font-weight: 700; color: #1A1D2E; margin-bottom: 20px;">
+                    Meet Our <span style="color: #FFA826;">Expert Team</span>
+                </h2>
+                <p style="color: #4a5568; font-size: 18px; max-width: 700px; margin: 0 auto;">
+                    Experienced professionals dedicated to delivering excellence in every project
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+                <!-- Team Member 1 -->
+                <div style="text-align: center;">
+                    <div
+                        style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, rgba(255,168,38,0.1), rgba(255,168,38,0.05)); border-radius: 15px; margin-bottom: 25px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#FFA826"
+                            stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <h4
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: #1A1D2E; margin-bottom: 8px;">
+                        Managing Director</h4>
+                    <p style="color: #FFA826; font-size: 15px; font-weight: 600; margin-bottom: 10px;">Leadership</p>
+                    <p style="color: #4a5568; font-size: 14px; line-height: 1.6;">25+ years of construction industry
+                        experience</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div style="text-align: center;">
+                    <div
+                        style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, rgba(255,168,38,0.1), rgba(255,168,38,0.05)); border-radius: 15px; margin-bottom: 25px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#FFA826"
+                            stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <h4
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: #1A1D2E; margin-bottom: 8px;">
+                        Chief Architect</h4>
+                    <p style="color: #FFA826; font-size: 15px; font-weight: 600; margin-bottom: 10px;">Design</p>
+                    <p style="color: #4a5568; font-size: 14px; line-height: 1.6;">Award-winning architect with
+                        international exposure</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div style="text-align: center;">
+                    <div
+                        style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, rgba(255,168,38,0.1), rgba(255,168,38,0.05)); border-radius: 15px; margin-bottom: 25px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#FFA826"
+                            stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <h4
+                        style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: #1A1D2E; margin-bottom: 8px;">
+                        Project Manager</h4>
+                    <p style="color: #FFA826; font-size: 15px; font-weight: 600; margin-bottom: 10px;">Operations</p>
+                    <p style="color: #4a5568; font-size: 14px; line-height: 1.6;">Expert in large-scale project delivery
+                        and management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: #FFA826; padding: 80px 0;">
+        <div class="container" style="max-width: 1320px; margin: 0 auto; padding: 0 15px; text-align: center;">
+            <h2
+                style="font-family: 'Barlow Condensed', sans-serif; font-size: 46px; font-weight: 700; color: #ffffff; margin-bottom: 20px;">
+                Interested in Our Projects?
+            </h2>
+            <p
+                style="color: #ffffff; font-size: 19px; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Contact us to learn about current and upcoming developments
+            </p>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="contact.html" class="default-btn"
+                    style="background: #ffffff; color: #1A1D2E; padding: 16px 36px; font-size: 16px;">Contact Us</a>
+                <a href="projects.html"
+                    style="background: transparent; border: 2px solid #ffffff; color: #ffffff; padding: 14px 34px; border-radius: 5px; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; transition: all 0.3s;">View
+                    Projects</a>
+            </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-buildex">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon-footer">
+                            <svg width="30" height="30" viewBox="0 0 40 40" fill="none">
+                                <path d="M10 32V14l10-6 10 6v18H10zm4-4h4v6h-4v-6zm8 0h4v6h-4v-6zm-6-6h4v4h-4v-4z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <span class="logo-text-footer">Palak Developers</span>
+                    </div>
+                    <p class="footer-description">
+                        Palak Developers specializes in building, renovating, and maintaining various structures such as
+                        residential and commercial buildings.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Get In Touch</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <strong>Address:</strong><br>
+                            54 Muthithi Road, Westlands, Nairobi
+                        </li>
+                        <li>
+                            <strong>Phone:</strong><br>
+                            0791 240 000
+                        </li>
+                        <li>
+                            <strong>Email:</strong><br>
+                            info@palakdevelopers.ke
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-newsletter-text">Get the latest updates and offers for business services yearly.
+                    </p>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-submit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Dark Strip for Vehicle Animations -->
+            <div class="footer-vehicle-strip">
+                <div class="vehicle-strip-container">
+                    <!-- Animated Construction Vehicles -->
+                    <div class="construction-vehicles">
+                        <!-- Dump Truck -->
+                        <div class="vehicle vehicle-1">
+                            <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="truckBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFB84D;stop-opacity:1" />
+                                        <stop offset="50%" style="stop-color:#FFA826;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#E69620;stop-opacity:1" />
+                                    </linearGradient>
+                                    <radialGradient id="wheelGrad">
+                                        <stop offset="30%" style="stop-color:#2a2a2a;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+                                    </radialGradient>
+                                </defs>
+                                <!-- Chassis -->
+                                <rect x="50" y="95" width="140" height="12" fill="#1a1a1a" rx="2" />
+                                <!-- Dump bed with shading -->
+                                <path d="M 55 50 L 65 30 L 145 30 L 155 50 L 155 95 L 55 95 Z" fill="url(#truckBody)" />
+                                <path d="M 55 50 L 65 30 L 145 30 L 155 50 Z" fill="#FF9510" opacity="0.3" />
+                                <!-- Bed details -->
+                                <line x1="70" y1="35" x2="70" y2="90" stroke="#E69620" stroke-width="2" opacity="0.5" />
+                                <line x1="105" y1="35" x2="105" y2="90" stroke="#E69620" stroke-width="2"
+                                    opacity="0.5" />
+                                <line x1="140" y1="35" x2="140" y2="90" stroke="#E69620" stroke-width="2"
+                                    opacity="0.5" />
+                                <!-- Cabin -->
+                                <path d="M 155 60 L 165 50 L 205 50 L 215 60 L 215 95 L 155 95 Z"
+                                    fill="url(#truckBody)" />
+                                <path d="M 155 60 L 165 50 L 205 50 L 215 60 Z" fill="#FFB84D" opacity="0.4" />
+                                <!-- Windows -->
+                                <path d="M 162 58 L 170 52 L 188 52 L 188 85 L 162 85 Z" fill="#4a5f7f" opacity="0.8" />
+                                <path d="M 192 52 L 207 52 L 210 60 L 210 85 L 192 85 Z" fill="#3a4f6f" opacity="0.8" />
+                                <!-- Window highlights -->
+                                <rect x="165" y="55" width="8" height="12" fill="#87CEEB" opacity="0.3" />
+                                <rect x="195" y="55" width="8" height="12" fill="#87CEEB" opacity="0.3" />
+                                <!-- Grill/bumper -->
+                                <rect x="213" y="70" width="5" height="20" fill="#1a1a1a" rx="1" />
+                                <line x1="214" y1="75" x2="217" y2="75" stroke="#555" stroke-width="1" />
+                                <line x1="214" y1="80" x2="217" y2="80" stroke="#555" stroke-width="1" />
+                                <line x1="214" y1="85" x2="217" y2="85" stroke="#555" stroke-width="1" />
+                                <!-- Wheels with detailed rims -->
+                                <circle cx="80" cy="110" r="20" fill="url(#wheelGrad)" />
+                                <circle cx="80" cy="110" r="13" fill="#2a2a2a" />
+                                <circle cx="80" cy="110" r="8" fill="#FF9510" />
+                                <circle cx="80" cy="110" r="4" fill="#1a1a1a" />
+                                <circle cx="190" cy="110" r="20" fill="url(#wheelGrad)" />
+                                <circle cx="190" cy="110" r="13" fill="#2a2a2a" />
+                                <circle cx="190" cy="110" r="8" fill="#FF9510" />
+                                <circle cx="190" cy="110" r="4" fill="#1a1a1a" />
+                                <!-- Headlight -->
+                                <circle cx="213" cy="65" r="3" fill="#FFE87C" opacity="0.9" />
+                            </svg>
+                        </div>
+
+                        <!-- Excavator -->
+                        <div class="vehicle vehicle-2">
+                            <svg viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="excBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFB84D;stop-opacity:1" />
+                                        <stop offset="60%" style="stop-color:#FFA826;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#E69620;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Boom arm (main arm) with gradient -->
+                                <path d="M 115 70 L 125 65 L 175 25 L 180 30 L 130 70 Z" fill="url(#excBody)" />
+                                <path d="M 115 70 L 120 67 L 170 27 L 175 25 Z" fill="#FFB84D" opacity="0.5" />
+                                <!-- Hydraulic cylinders -->
+                                <rect x="120" y="55" width="35" height="6" fill="#555" rx="2"
+                                    transform="rotate(-32 120 58)" />
+                                <circle cx="120" cy="58" r="3" fill="#333" />
+                                <circle cx="148" cy="42" r="3" fill="#333" />
+                                <!-- Stick (secondary arm) -->
+                                <path d="M 173 28 L 178 23 L 218 5 L 223 8 L 183 28 Z" fill="url(#excBody)" />
+                                <path d="M 173 28 L 176 25 L 216 7 L 218 5 Z" fill="#FF9510" opacity="0.6" />
+                                <!-- Hydraulic for stick -->
+                                <rect x="180" y="18" width="28" height="5" fill="#555" rx="2"
+                                    transform="rotate(-38 180 20)" />
+                                <!-- Bucket -->
+                                <path d="M 218 8 L 235 2 L 245 8 L 248 18 L 238 22 L 228 18 Z" fill="#E69620" />
+                                <path d="M 235 2 L 245 8 L 248 18 L 238 22 Z" fill="#CC8519" />
+                                <!-- Bucket teeth -->
+                                <polygon points="238,22 240,28 242,22" fill="#999" />
+                                <polygon points="243,20 245,26 247,20" fill="#999" />
+                                <!-- Counterweight -->
+                                <rect x="30" y="75" width="28" height="25" fill="#1a1a1a" rx="2" />
+                                <rect x="32" y="78" width="24" height="8" fill="#333" opacity="0.5" />
+                                <!-- Cabin -->
+                                <path d="M 60 55 L 70 45 L 115 45 L 125 55 L 125 90 L 60 90 Z" fill="url(#excBody)" />
+                                <path d="M 60 55 L 70 45 L 115 45 L 125 55 Z" fill="#FFB84D" opacity="0.4" />
+                                <!-- Cabin windows -->
+                                <path d="M 68 52 L 76 47 L 105 47 L 110 52 L 110 82 L 68 82 Z" fill="#4a5f7f"
+                                    opacity="0.75" />
+                                <!-- Window frame -->
+                                <line x1="90" y1="47" x2="90" y2="82" stroke="#2a3f5f" stroke-width="2" />
+                                <!-- Window reflection -->
+                                <rect x="72" y="50" width="12" height="15" fill="#87CEEB" opacity="0.25" />
+                                <!-- Body/House -->
+                                <ellipse cx="92" cy="100" rx="65" ry="16" fill="#E69620" />
+                                <rect x="27" y="85" width="130" height="15" fill="url(#excBody)" rx="3" />
+                                <!-- Tracks -->
+                                <ellipse cx="90" cy="128" rx="75" ry="18" fill="#0a0a0a" />
+                                <rect x="15" y="115" width="150" height="26" fill="#1a1a1a" rx="13" />
+                                <!-- Track wheels -->
+                                <circle cx="35" cy="128" r="11" fill="#2a2a2a" />
+                                <circle cx="60" cy="128" r="9" fill="#333" />
+                                <circle cx="82" cy="128" r="9" fill="#333" />
+                                <circle cx="105" cy="128" r="9" fill="#333" />
+                                <circle cx="127" cy="128" r="9" fill="#333" />
+                                <circle cx="150" cy="128" r="11" fill="#2a2a2a" />
+                                <!-- Track details -->
+                                <rect x="18" y="119" width="145" height="3" fill="#0a0a0a" opacity="0.5" />
+                                <rect x="18" y="135" width="145" height="3" fill="#0a0a0a" opacity="0.5" />
+                            </svg>
+                        </div>
+
+                        <!-- Bulldozer -->
+                        <div class="vehicle vehicle-3">
+                            <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="dozBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFB84D;stop-opacity:1" />
+                                        <stop offset="50%" style="stop-color:#FFA826;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#E69620;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Blade assembly -->
+                                <path d="M 8 75 L 18 68 L 42 68 L 48 75 L 48 115 L 8 118 Z" fill="#CC8519" />
+                                <path d="M 8 75 L 18 68 L 42 68 L 48 75 Z" fill="#E69620" />
+                                <!-- Blade support arms -->
+                                <rect x="35" y="82" width="18" height="6" fill="#1a1a1a" rx="2" />
+                                <rect x="35" y="98" width="18" height="6" fill="#1a1a1a" rx="2" />
+                                <circle cx="35" cy="85" r="3" fill="#333" />
+                                <circle cx="35" cy="101" r="3" fill="#333" />
+                                <!-- Hydraulic cylinders -->
+                                <rect x="28" y="78" width="8" height="28" fill="#555" rx="2" />
+                                <circle cx="32" cy="78" r="4" fill="#333" />
+                                <circle cx="32" cy="106" r="4" fill="#333" />
+                                <!-- Main body -->
+                                <rect x="50" y="70" width="110" height="48" fill="url(#dozBody)" rx="4" />
+                                <rect x="52" y="72" width="106" height="10" fill="#FFB84D" opacity="0.4" rx="2" />
+                                <!-- Engine compartment -->
+                                <rect x="55" y="55" width="45" height="20" fill="url(#dozBody)" rx="2" />
+                                <rect x="58" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <rect x="68" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <rect x="78" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <rect x="88" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <!-- Exhaust pipe -->
+                                <rect x="60" y="45" width="8" height="15" fill="#2a2a2a" rx="2" />
+                                <ellipse cx="64" cy="45" rx="5" ry="3" fill="#1a1a1a" />
+                                <!-- Cabin -->
+                                <path d="M 95 55 L 105 42 L 140 42 L 150 55 L 150 70 L 95 70 Z" fill="url(#dozBody)" />
+                                <path d="M 95 55 L 105 42 L 140 42 L 150 55 Z" fill="#FFB84D" opacity="0.5" />
+                                <!-- Cabin windows -->
+                                <path d="M 100 53 L 108 45 L 135 45 L 142 53 L 142 68 L 100 68 Z" fill="#4a5f7f"
+                                    opacity="0.75" />
+                                <!-- Window frames -->
+                                <line x1="120" y1="45" x2="120" y2="68" stroke="#2a3f5f" stroke-width="2.5" />
+                                <line x1="101" y1="60" x2="141" y2="60" stroke="#2a3f5f" stroke-width="2" />
+                                <!-- Window reflection -->
+                                <rect x="105" y="48" width="10" height="12" fill="#87CEEB" opacity="0.3" />
+                                <rect x="125" y="48" width="10" height="12" fill="#87CEEB" opacity="0.3" />
+                                <!-- Ripper (rear attachment) -->
+                                <path d="M 155 95 L 165 90 L 175 95 L 175 110 L 165 115 Z" fill="#CC8519" />
+                                <polygon points="175,110 178,115 175,120" fill="#999" />
+                                <!-- Track frame -->
+                                <ellipse cx="105" cy="128" rx="72" ry="18" fill="#0a0a0a" />
+                                <rect x="33" y="118" width="144" height="25" fill="#1a1a1a" rx="12" />
+                                <!-- Idler and sprocket wheels (larger) -->
+                                <circle cx="48" cy="130" r="14" fill="url(#wheelGrad)" />
+                                <circle cx="48" cy="130" r="9" fill="#FF9510" />
+                                <circle cx="162" cy="130" r="14" fill="url(#wheelGrad)" />
+                                <circle cx="162" cy="130" r="9" fill="#FF9510" />
+                                <!-- Track rollers -->
+                                <circle cx="75" cy="130" r="10" fill="#2a2a2a" />
+                                <circle cx="95" cy="130" r="10" fill="#333" />
+                                <circle cx="115" cy="130" r="10" fill="#333" />
+                                <circle cx="135" cy="130" r="10" fill="#2a2a2a" />
+                                <!-- Track texture -->
+                                <rect x="36" y="122" width="138" height="3" fill="#0a0a0a" opacity="0.6" />
+                                <rect x="36" y="137" width="138" height="3" fill="#0a0a0a" opacity="0.6" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
             <div class="footer-bottom">
-                <p class="footer-copyright">© 2024 Palak Developers. Part of <a href="https://palakgroup.co.ke"
-                        style="color: var(--color-accent);">The Palak Group</a></p>
+                <p>© 2026 Palak Developers. Part of <a href="https://palakgroup.co.ke" target="_blank">The Palak
+                        Group</a></p>
             </div>
         </div>
     </footer>
 
-    <script type="module" src="./src/main.js"></script>
+    <!-- Navigation JavaScript -->
+    <script src="./src/scripts/navigation.js"></script>
+
+    <script>
+        // Sticky Header Behavior
+        const navigationWrapper = document.querySelector('.navigation-wrapper');
+        const topHeader = document.querySelector('.top-header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navigationWrapper.classList.add('sticky');
+                topHeader.style.display = 'none';
+            } else {
+                navigationWrapper.classList.remove('sticky');
+                topHeader.style.display = '';
+            }
+        });
+    </script>
 </body>
 
 </html>

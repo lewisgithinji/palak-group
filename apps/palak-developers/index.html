@@ -9,224 +9,1216 @@
 
     <title>Palak Developers - Building Modern Kenya</title>
 
+    <!-- Buildex Fonts: Space Grotesk + DM Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Rubik:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/styles/main.css">
+    <!-- Swiper CSS for Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- Buildex Theme CSS -->
+    <link rel="stylesheet" href="./src/styles/buildex.css">
+    <link rel="stylesheet" href="./src/styles/hero-slider.css">
+    <link rel="stylesheet" href="./src/styles/hero-animations.css">
+    <link rel="stylesheet" href="./src/styles/enhancements.css">
+    <link rel="stylesheet" href="./src/styles/mobile-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <nav class="nav">
-                <a href="/" class="nav-brand">
-                    <div class="logo-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="8" fill="#d97706" />
-                            <path d="M10 32V14l10-6 10 6v18H10zm4-4h4v6h-4v-6zm8 0h4v6h-4v-6zm-6-6h4v4h-4v-4z"
-                                fill="white" />
-                        </svg>
+    <header class="site-header">
+        <div class="navigation-wrapper">
+            <div class="container-fluid">
+                <div class="main-header-wrapper">
+                    <!-- Logo Section -->
+                    <div class="site-logo">
+                        <a href="/">
+                            <div class="logo-icon">
+                                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 32V14l10-6 10 6v18H10zm4-4h4v6h-4v-6zm8 0h4v6h-4v-6zm-6-6h4v4h-4v-4z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <span class="logo-text">Palak Developers</span>
+                        </a>
                     </div>
-                    <span>Palak Developers</span>
-                </a>
 
-                <ul class="nav-menu">
-                    <li><a href="/" class="nav-link active">Home</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#contact" class="btn btn-primary btn-sm">Inquire</a></li>
-                </ul>
+                    <div class="main-header-items">
+                        <!-- Top Header -->
+                        <div class="top-header">
+                            <ul class="top-left">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                    <span>0791 240 000</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                    <a href="mailto:info@palakdevelopers.ke">info@palakdevelopers.ke</a>
+                                </li>
+                            </ul>
+                            <div class="top-right">
+                                <ul class="top-header-nav">
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Faqs</a></li>
+                                </ul>
+                                <ul class="header-social-share">
+                                    <li><a href="#"><svg viewBox="0 0 320 512" fill="currentColor">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                            </svg></a></li>
+                                    <li><a href="#"><svg viewBox="0 0 512 512" fill="currentColor">
+                                                <path
+                                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                                            </svg></a></li>
+                                    <li><a href="#"><svg viewBox="0 0 448 512" fill="currentColor">
+                                                <path
+                                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a90.25,90.25,0,1,0,43.7,77.81V73.27A210.15,210.15,0,0,0,432.33,121.49l.06.06a209.44,209.44,0,0,0,15.61,4.19Z" />
+                                            </svg></a></li>
+                                    <li><a href="#"><svg viewBox="0 0 576 512" fill="currentColor">
+                                                <path
+                                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.996 48.284 48.277C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.281 42.003-24.627 48.284-48.277 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                                            </svg></a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                <button class="nav-toggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
+                        <!-- Navigation Wrap -->
+                        <div class="navigation-wrap">
+                            <nav class="navigation-menu">
+                                <ul class="main-menu">
+                                    <li class="menu-item"><a href="/" class="active">Home</a></li>
+                                    <li class="menu-item has-dropdown">
+                                        <a href="about.html">Company</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="team.html">Our Team</a></li>
+                                            <li><a href="faq.html">FAQ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a href="services.html">Services</a></li>
+                                    <li class="menu-item"><a href="projects.html">Projects</a></li>
+                                    <li class="menu-item"><a href="blog.html">Blog</a></li>
+                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header-right">
+                                <div class="dl-search-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </div>
+                                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <a href="contact.html" class="default-btn">GET SOLUTION</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-background">
-            <img src="/images/hero-bg.png" alt="Modern apartment building construction" loading="eager">
-            <div class="hero-overlay"></div>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+
+
+    <!-- Hero Slider - Buildex Style -->
+    <div class="dl-slider">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="dl-slider-img-wrap">
+                        <div class="slider-img">
+                            <img src="/images/hero-bg.png" alt="Construction site">
+                        </div>
+                        <div class="slider-shape">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="slider-content-wrap">
+                        <div class="content-width">
+                            <div class="slider-content">
+                                <div class="dl-caption sub-heading is-border">
+                                    <div class="dl-cap">Palak Developers Ltd!</div>
+                                </div>
+                                <div class="dl-caption heading">
+                                    <div class="dl-cap">Highest standards<br>of construction!</div>
+                                </div>
+                                <div class="dl-caption desc">
+                                    <div class="dl-cap">Building modern Kenya with quality construction<br>and
+                                        exceptional service since 1999.</div>
+                                </div>
+                                <div class="slider-btn-wrap">
+                                    <a href="contact.html" class="dl-el-btn">Get Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="dl-slider-img-wrap">
+                        <div class="slider-img">
+                            <img src="/images/project-1.png" alt="Modern building">
+                        </div>
+                        <div class="slider-shape">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="slider-content-wrap">
+                        <div class="content-width">
+                            <div class="slider-content">
+                                <div class="dl-caption sub-heading is-border">
+                                    <div class="dl-cap">25+ Years Experience!</div>
+                                </div>
+                                <div class="dl-caption heading">
+                                    <div class="dl-cap">Transform ideas<br>into reality!</div>
+                                </div>
+                                <div class="dl-caption desc">
+                                    <div class="dl-cap">Creating exceptional residential and commercial<br>spaces that
+                                        define modern living.</div>
+                                </div>
+                                <div class="slider-btn-wrap">
+                                    <a href="projects.html" class="dl-el-btn">View Projects</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="dl-slider-img-wrap">
+                        <div class="slider-img">
+                            <img src="/images/project-3.png" alt="Apartment complex">
+                        </div>
+                        <div class="slider-shape">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="slider-content-wrap">
+                        <div class="content-width">
+                            <div class="slider-content">
+                                <div class="dl-caption sub-heading is-border">
+                                    <div class="dl-cap">Quality Construction!</div>
+                                </div>
+                                <div class="dl-caption heading">
+                                    <div class="dl-cap">Build your dream<br>space today!</div>
+                                </div>
+                                <div class="dl-caption desc">
+                                    <div class="dl-cap">From concept to completion, we deliver<br>projects that exceed
+                                        expectations.</div>
+                                </div>
+                                <div class="slider-btn-wrap">
+                                    <a href="services.html" class="dl-el-btn">Our Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination dl-slider-pagination"></div>
         </div>
-        <div class="container">
-            <div class="hero-content" data-animate="fade-up">
-                <span class="hero-label">Building Tomorrow's Landmarks</span>
-                <h1 class="hero-title text-5xl">Modern Living Spaces<br><span class="text-accent">Designed for
-                        You</span></h1>
-                <p class="hero-subtitle text-lg">Palak Developers is committed to creating exceptional residential and
-                    commercial spaces
-                    that define modern living in East Africa.</p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-accent btn-lg btn-shine">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary btn-lg">Contact Us</a>
+    </div>
+
+
+    <!-- About Section - Buildex Style -->
+    <section class="about-section-buildex">
+        <div class="about-grid">
+            <!-- Left Column: Content -->
+            <div class="about-content">
+                <div class="about-welcome-tag">Welcome to Palak Developers Ltd!</div>
+
+                <h2 class="about-heading">
+                    Recognized as one of the <span class="highlight">leading construction</span> company in Kenya!
+                </h2>
+
+                <p class="about-description">
+                    Palak Developers has been at the forefront of Kenya's construction industry for over two decades.
+                    We specialize in creating modern residential and commercial developments that combine quality
+                    craftsmanship with innovative design, delivering projects that stand the test of time.
+                </p>
+
+                <div class="about-stats-display">
+                    <div class="stat-with-bg">
+                        <span class="stat-number-large">25+</span>
+                        <div class="stat-separator"></div>
+                        <span class="stat-label-text">years of experience<br>in construction!</span>
+                    </div>
+                </div>
+
+                <a href="about.html" class="default-btn">MORE ABOUT US</a>
+            </div>
+
+            <!-- Right Column: Image Composition -->
+            <div class="about-image-composition">
+                <!-- Main Construction Image -->
+                <div class="construction-main-image">
+                    <img src="/images/construction-workers-kenya.png" alt="Construction team at work">
+                </div>
+
+                <!-- Overlay Building Image -->
+                <div class="construction-overlay-image">
+                    <img src="/images/building-overlay.png" alt="Modern building construction">
+                </div>
+
+                <!-- Vertical Year Banner -->
+                <div class="year-banner">
+                    <div class="year-banner-from">From</div>
+                    <div class="year-banner-year">1999</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services -->
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-label">What We Build</span>
-                <h2 class="section-title">Our Development Focus</h2>
-                <p class="section-description">Creating spaces that enhance how people live, work, and connect.</p>
+    <!-- Services Section - Buildex Style -->
+    <section class="services-section-buildex">
+        <div class="services-container">
+            <!-- Section Header -->
+            <div class="services-header">
+                <div class="services-welcome-tag">Explore our construction services!</div>
+                <h2 class="services-heading">
+                    Building the world with quality <span class="highlight-yellow">services!</span>
+                </h2>
+                <p class="services-description">
+                    Construction is a general term meaning the art and science to form objects systems or organizations.
+                </p>
             </div>
 
+            <!-- Service Cards Grid -->
             <div class="services-grid">
-                <div class="service-card" data-animate="fade-up">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M3 21h18" />
-                            <path d="M5 21V7l8-4v18" />
-                            <path d="M19 21V11l-6-4" />
-                            <path d="M9 9v.01" />
-                            <path d="M9 12v.01" />
-                            <path d="M9 15v.01" />
-                            <path d="M9 18v.01" />
-                        </svg>
+                <!-- Service Card 1 - Automobile Manufacturing -->
+                <div class="service-card-buildex">
+                    <div class="service-image-wrapper">
+                        <img src="/images/service-1.png" alt="Automobile Manufacturing" class="service-image">
                     </div>
-                    <h3 class="service-title">Residential</h3>
-                    <p class="service-description">Modern apartments and housing developments designed for comfortable
-                        living.</p>
+                    <div class="service-content-wrapper">
+                        <div class="service-icon-buildex">
+                            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 40L24 32L32 40L40 32L48 40" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="32" cy="24" r="8" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="20" cy="48" r="4" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="44" cy="48" r="4" stroke="currentColor" stroke-width="2.5" />
+                                <path d="M24 48H40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title-buildex">Automobile<br>Manufacturing</h3>
+                        <p class="service-desc-buildex">Construction is a general term meaning the art and science form
+                            objects.</p>
+                        <a href="services.html" class="service-link-buildex">Read More</a>
+                    </div>
                 </div>
 
-                <div class="service-card" data-animate="fade-up" style="animation-delay: 100ms;">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <rect x="4" y="2" width="16" height="20" rx="2" />
-                            <path d="M9 22v-4h6v4" />
-                            <path d="M8 6h.01" />
-                            <path d="M16 6h.01" />
-                            <path d="M12 6h.01" />
-                            <path d="M8 10h.01" />
-                            <path d="M16 10h.01" />
-                            <path d="M12 10h.01" />
-                            <path d="M8 14h.01" />
-                            <path d="M16 14h.01" />
-                            <path d="M12 14h.01" />
-                        </svg>
+                <!-- Service Card 2 - Mechanical Power Engineering -->
+                <div class="service-card-buildex">
+                    <div class="service-image-wrapper">
+                        <img src="/images/service-2.png" alt="Mechanical Power Engineering" class="service-image">
                     </div>
-                    <h3 class="service-title">Commercial</h3>
-                    <p class="service-description">Office buildings and retail spaces built for business success.</p>
+                    <div class="service-content-wrapper">
+                        <div class="service-icon-buildex">
+                            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="2.5" />
+                                <path d="M32 14V20M32 44V50M50 32H44M20 32H14" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" />
+                                <path d="M44 20L40 24M24 40L20 44M44 44L40 40M24 24L20 20" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title-buildex">Mechanical Power<br>Engineering</h3>
+                        <p class="service-desc-buildex">Construction is a general term meaning the art and science form
+                            objects.</p>
+                        <a href="services.html" class="service-link-buildex">Read More</a>
+                    </div>
                 </div>
 
-                <div class="service-card" data-animate="fade-up" style="animation-delay: 200ms;">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M2 22h20" />
-                            <path d="M6.36 17.4 4 17l-2-4 5-4 4 3h4l3-2" />
-                            <path d="m9 17 1.2-4.6" />
-                            <path d="m13 13 3.3 4.7" />
-                            <path d="M17.4 14.6 21 12l1 4-5.4 1" />
-                        </svg>
+                <!-- Service Card 3 - Oil Gas Petroleum Industry -->
+                <div class="service-card-buildex">
+                    <div class="service-image-wrapper">
+                        <img src="/images/service-3.png" alt="Oil Gas Petroleum Industry" class="service-image">
                     </div>
-                    <h3 class="service-title">Mixed-Use</h3>
-                    <p class="service-description">Integrated developments combining residential, retail, and office
-                        spaces.</p>
+                    <div class="service-content-wrapper">
+                        <div class="service-icon-buildex">
+                            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 48V24C28 20 26 16 22 16C18 16 16 20 16 24V48" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" />
+                                <path d="M36 48V28L42 16L48 28V48" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 48H52" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title-buildex">Oil Gas Petroleum<br>Industry</h3>
+                        <p class="service-desc-buildex">Construction is a general term meaning the art and science form
+                            objects.</p>
+                        <a href="services.html" class="service-link-buildex">Read More</a>
+                    </div>
                 </div>
 
-                <div class="service-card" data-animate="fade-up" style="animation-delay: 300ms;">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
-                            <path d="m9 12 2 2 4-4" />
-                        </svg>
+                <!-- Service Card 4 - Renovation and Repurpose -->
+                <div class="service-card-buildex">
+                    <div class="service-image-wrapper">
+                        <img src="/images/service-4.png" alt="Renovation and Repurpose" class="service-image">
                     </div>
-                    <h3 class="service-title">Quality Focus</h3>
-                    <p class="service-description">Built with premium materials and attention to every detail.</p>
+                    <div class="service-content-wrapper">
+                        <div class="service-icon-buildex">
+                            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 16L20 28V48H44V28L32 16Z" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linejoin="round" />
+                                <path d="M28 48V36H36V48" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linejoin="round" />
+                                <circle cx="28" cy="28" r="2" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title-buildex">Renovation and<br>Repurpose</h3>
+                        <p class="service-desc-buildex">Construction is a general term meaning the art and science form
+                            objects.</p>
+                        <a href="services.html" class="service-link-buildex">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats -->
-    <section class="section bg-primary text-white">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item" data-animate="fade-up">
-                    <span class="stat-number text-accent" data-counter="1000" data-suffix="+">0</span>
-                    <span class="stat-label">Units Developed</span>
+    <!-- CTA Strip Section -->
+    <section class="cta-strip-buildex">
+        <div class="cta-container">
+            <div class="cta-text">Offering High Quality Construction Solutions!</div>
+            <a href="contact.html" class="cta-button-buildex">MAKE AN APPOINTMENT</a>
+        </div>
+    </section>
+
+    <!-- Scrolling Marquee Section -->
+    <section class="marquee-section-buildex">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span class="marquee-item">Plenty of awards and industry recognition</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">let's Make Something Amazing Together</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Trusted by over 6,000 Ambitious Brands</span>
+                <span class="marquee-separator">✦</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span class="marquee-item">Plenty of awards and industry recognition</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">let's Make Something Amazing Together</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Trusted by over 6,000 Ambitious Brands</span>
+                <span class="marquee-separator">✦</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase Carousel Section -->
+    <section class="projects-carousel-buildex">
+        <div class="projects-carousel-container">
+            <!-- Section Header -->
+            <div class="projects-carousel-header">
+                <div class="projects-header-left">
+                    <div class="projects-tag">Discover our projects</div>
+                    <h2 class="projects-carousel-heading">
+                        Work together to create<br>unique <span class="highlight-underline">experience!</span>
+                    </h2>
+                    <p class="projects-carousel-description">
+                        Construction is a general term meaning the art and science to form objects systems or
+                        organizations.
+                    </p>
                 </div>
-                <div class="stat-item" data-animate="fade-up" style="animation-delay: 100ms;">
-                    <span class="stat-number text-accent" data-counter="15" data-suffix="+">0</span>
-                    <span class="stat-label">Years Experience</span>
+                <div class="projects-header-right">
+                    <a href="projects.html" class="view-all-projects-btn">VIEW ALL PROJECTS</a>
                 </div>
-                <div class="stat-item" data-animate="fade-up" style="animation-delay: 200ms;">
-                    <span class="stat-number text-accent" data-counter="20" data-suffix="+">0</span>
-                    <span class="stat-label">Projects Completed</span>
+            </div>
+
+            <!-- Projects Carousel Track -->
+            <div class="projects-carousel-wrapper">
+                <button class="carousel-arrow carousel-arrow-left" onclick="scrollProjectsLeft()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+
+                <div class="projects-carousel-track">
+                    <!-- Project Card 1 -->
+                    <div class="project-card-carousel">
+                        <div class="project-card-image">
+                            <img src="/images/project-1.png" alt="Intern Commerce Centre">
+                        </div>
+                        <div class="project-card-info">
+                            <span class="project-category">BUILDINGS</span>
+                            <h3 class="project-title">Intern Commerce Centre</h3>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card-carousel">
+                        <div class="project-card-image">
+                            <img src="/images/project-2.png" alt="Petron Towers Kuala Lumpur">
+                        </div>
+                        <div class="project-card-info">
+                            <span class="project-category">FACTORY</span>
+                            <h3 class="project-title">Petron Towers Kuala Lumpur</h3>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card-carousel">
+                        <div class="project-card-image">
+                            <img src="/images/project-3.png" alt="The White House">
+                        </div>
+                        <div class="project-card-info">
+                            <span class="project-category">EQUIPMENT</span>
+                            <h3 class="project-title">The White House</h3>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card-carousel">
+                        <div class="project-card-image">
+                            <img src="/images/hero-bg.png" alt="World Trade Center">
+                        </div>
+                        <div class="project-card-info">
+                            <span class="project-category">BUILDINGS</span>
+                            <h3 class="project-title">World Trade Center New York</h3>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate cards for infinite scroll effect -->
+                    <div class="project-card-carousel">
+                        <div class="project-card-image">
+                            <img src="/images/project-1.png" alt="Intern Commerce Centre">
+                        </div>
+                        <div class="project-card-info">
+                            <span class="project-category">BUILDINGS</span>
+                            <h3 class="project-title">Intern Commerce Centre</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-card-carousel">
+                        <div class="project-card-image">
+                            <img src="/images/project-2.png" alt="Petron Towers">
+                        </div>
+                        <div class="project-card-info">
+                            <span class="project-category">FACTORY</span>
+                            <h3 class="project-title">Petron Towers Kuala Lumpur</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-item" data-animate="fade-up" style="animation-delay: 300ms;">
-                    <span class="stat-number text-accent" data-counter="100" data-suffix="%">0</span>
-                    <span class="stat-label">Client Satisfaction</span>
+
+                <button class="carousel-arrow carousel-arrow-right" onclick="scrollProjectsRight()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Wavy Topographic Decoration at Bottom -->
+        <div class="projects-wavy-decoration">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <!-- Multiple concentric wavy lines for topographic effect -->
+                <path d="M0,60 Q120,40 240,55 T480,60 Q600,65 720,55 T960,60 Q1080,50 1200,60 T1440,55 L1440,0 L0,0 Z"
+                    fill="#F5F6F8" opacity="1" />
+
+                <path d="M0,65 Q120,45 240,60 T480,65 Q600,70 720,60 T960,65 Q1080,55 1200,65 T1440,60" stroke="#D1D5DB"
+                    stroke-width="1" fill="none" opacity="0.5" />
+
+                <path d="M0,75 Q120,55 240,70 T480,75 Q600,80 720,70 T960,75 Q1080,65 1200,75 T1440,70" stroke="#D1D5DB"
+                    stroke-width="1" fill="none" opacity="0.4" />
+
+                <path d="M0,85 Q120,65 240,80 T480,85 Q600,90 720,80 T960,85 Q1080,75 1200,85 T1440,80" stroke="#D1D5DB"
+                    stroke-width="1" fill="none" opacity="0.3" />
+
+                <path d="M0,95 Q120,75 240,90 T480,95 Q600,100 720,90 T960,95 Q1080,85 1200,95 T1440,90"
+                    stroke="#D1D5DB" stroke-width="0.8" fill="none" opacity="0.25" />
+
+                <path d="M0,105 Q120,85 240,100 T480,105 Q600,110 720,100 T960,105 Q1080,95 1200,105 T1440,100"
+                    stroke="#D1D5DB" stroke-width="0.6" fill="none" opacity="0.2" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Bar and Contact Section -->
+    <section class="stats-contact-dark-section">
+        <!-- Stats Bar -->
+        <div class="stats-bar-buildex">
+            <div class="stats-bar-container">
+                <div class="stat-item-buildex">
+                    <div class="stat-icon-buildex">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- Simple clipboard outline -->
+                            <rect x="16" y="12" width="32" height="44" rx="2" />
+                            <path d="M24 12V8C24 6 26 4 28 4H36C38 4 40 6 40 8V12" />
+                            <line x1="24" y1="24" x2="40" y2="24" />
+                            <line x1="24" y1="32" x2="40" y2="32" />
+                            <line x1="24" y1="40" x2="36" y2="40" />
+                        </svg>
+                    </div>
+                    <div class="stat-content-buildex">
+                        <div class="stat-number-buildex">145</div>
+                        <div class="stat-label-buildex">Happy Clients</div>
+                    </div>
+                </div>
+
+                <div class="stat-item-buildex">
+                    <div class="stat-icon-buildex">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- Simple buildings outline -->
+                            <rect x="10" y="28" width="14" height="28" />
+                            <rect x="28" y="16" width="16" height="40" />
+                            <rect x="48" y="24" width="10" height="32" />
+                            <rect x="14" y="34" width="3" height="3" />
+                            <rect x="18" y="34" width="3" height="3" />
+                            <rect x="14" y="42" width="3" height="3" />
+                            <rect x="18" y="42" width="3" height="3" />
+                            <rect x="33" y="24" width="3" height="3" />
+                            <rect x="38" y="24" width="3" height="3" />
+                        </svg>
+                    </div>
+                    <div class="stat-content-buildex">
+                        <div class="stat-number-buildex">74</div>
+                        <div class="stat-label-buildex">Project Completed</div>
+                    </div>
+                </div>
+
+                <div class="stat-item-buildex">
+                    <div class="stat-icon-buildex">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- Simple star/award outline -->
+                            <path d="M32 12L35 24L47 24L38 31L41 43L32 36L23 43L26 31L17 24L29 24Z"
+                                stroke-linejoin="round" />
+                            <circle cx="32" cy="32" r="12" />
+                        </svg>
+                    </div>
+                    <div class="stat-content-buildex">
+                        <div class="stat-number-buildex">26</div>
+                        <div class="stat-label-buildex">Award Won</div>
+                    </div>
+                </div>
+
+                <div class="stat-item-buildex">
+                    <div class="stat-icon-buildex">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- Simple team outline -->
+                            <circle cx="24" cy="20" r="7" />
+                            <path d="M12 48C12 40 16 36 24 36C32 36 36 40 36 48" />
+                            <circle cx="44" cy="20" r="7" />
+                            <path d="M32 48C32 40 36 36 44 36C52 36 56 40 56 48" />
+                        </svg>
+                    </div>
+                    <div class="stat-content-buildex">
+                        <div class="stat-number-buildex">42</div>
+                        <div class="stat-label-buildex">Team Members</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section id="contact" class="cta">
-        <div class="container">
-            <h2 class="cta-title" data-animate="fade-up">Interested in Our Developments?</h2>
-            <p class="cta-text" data-animate="fade-up">Contact us to learn about current and upcoming projects.</p>
-            <div class="cta-actions" data-animate="fade-up">
-                <a href="mailto:info@palakdevelopers.co.ke" class="btn btn-white btn-lg">Email Us</a>
-                <a href="tel:+254700000000" class="btn btn-secondary btn-lg"
-                    style="border-color: white; color: white;">Call Now</a>
+    <!-- Contact Form Section -->
+    <div class="contact-section-buildex">
+        <div class="contact-container-buildex">
+            <!-- Left: Construction Image with Play Button -->
+            <div class="contact-image-side">
+                <div class="contact-image-wrapper">
+                    <img src="/images/contact-construction.png" alt="Construction site equipment">
+                    <div class="video-play-overlay">
+                        <button class="play-button-buildex">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="contact-form-side">
+                <span class="contact-tag-buildex">TALK WITH US!</span>
+                <h2 class="contact-heading-buildex">
+                    Building with passion precision and <span class="highlight-yellow-underline">pride!</span>
+                </h2>
+                <form class="contact-form-buildex" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <select name="industry" required>
+                                <option value="">Select Industry</option>
+                                <option value="residential">Residential Construction</option>
+                                <option value="commercial">Commercial Development</option>
+                                <option value="industrial">Industrial Projects</option>
+                                <option value="renovation">Renovation & Remodeling</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Message" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section-buildex">
+        <div class="testimonials-container">
+            <span class="section-tag-buildex">Clients testimonials</span>
+            <h2 class="section-heading-buildex">What clients <span class="highlight-underline">says!</span></h2>
+            <p class="section-description">Construction is a general term meaning the art and science to form objects
+                systems or organizations.</p>
+
+            <div class="testimonials-carousel">
+                <div class="testimonial-card">
+                    <div class="quote-icon">99</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">Seriously the best customer support ever, who ever has been helping.
+                        THANK YOU! not only have they been very patient with me, they have explained me step by step.
+                    </p>
+                    <div class="client-info">
+                        <img src="/images/client-1.png" alt="James Williams" class="client-avatar">
+                        <div>
+                            <h4 class="client-name">James Williams</h4>
+                            <p class="client-position">EXECUTIVE ADV</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">99</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">Seriously the best customer support ever, who ever has been helping.
+                        THANK YOU! not only have they been very patient with me, they have explained me step by step.
+                    </p>
+                    <div class="client-info">
+                        <img src="/images/client-2.png" alt="Anthony Notson" class="client-avatar">
+                        <div>
+                            <h4 class="client-name">Anthony Notson</h4>
+                            <p class="client-position">SITE ENGINEER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner-buildex">
+        <div class="cta-banner-container">
+            <div class="cta-banner-content">
+                <span class="cta-tag">Let's talk with us!</span>
+                <h2 class="cta-heading">Serving since 1970 with<br>global strategies!</h2>
+            </div>
+            <a href="contact.html" class="cta-banner-btn">GET SOLUTION</a>
+        </div>
+    </section>
+
+    <!-- News and Insights Section -->
+    <section class="news-section-buildex">
+        <div class="news-container">
+            <span class="section-tag-buildex">latest news from blog</span>
+            <h2 class="section-heading-buildex">News and <span class="highlight-underline">insights!</span></h2>
+            <p class="section-description">Stay updated with the latest trends, projects, and industry news in Kenya's
+                construction sector.</p>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="/images/project-2.png" alt="Kenya Construction Growth">
+                        <span class="news-category equipment">Industry News</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-author">Palak Developers</span>
+                            <span class="news-date">January 10, 2026</span>
+                        </div>
+                        <h3 class="news-title">Kenya's Construction Sector Sees 12% Growth in 2026</h3>
+                        <p class="news-excerpt">The Kenyan construction industry continues its robust expansion,
+                            driven by major infrastructure projects and affordable housing...</p>
+                        <a href="blog.html" class="news-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="/images/project-3.png" alt="Green Building">
+                        <span class="news-category construction">Sustainability</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-author">Palak Developers</span>
+                            <span class="news-date">January 5, 2026</span>
+                        </div>
+                        <h3 class="news-title">Green Building Certifications Rise 30% in Kenyan Market</h3>
+                        <p class="news-excerpt">More developers are pursuing EDGE and LEED certifications as
+                            sustainability becomes a key market differentiator...</p>
+                        <a href="blog.html" class="news-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="/images/project-4.png" alt="Westlands Development">
+                        <span class="news-category buildings">Market Trends</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-author">Palak Developers</span>
+                            <span class="news-date">January 3, 2026</span>
+                        </div>
+                        <h3 class="news-title">Commercial Real Estate Demand Surges in Westlands</h3>
+                        <p class="news-excerpt">Office space occupancy reaches 85% as businesses expand operations in
+                            Nairobi's premium business district...</p>
+                        <a href="blog.html" class="news-link">Read More →</a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer-buildex">
+        <div class="footer-content">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="nav-brand" style="color: white; margin-bottom: var(--space-4);">
-                        <span>Palak Developers</span>
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon-footer">
+                            <svg width="30" height="30" viewBox="0 0 40 40" fill="none">
+                                <path d="M10 32V14l10-6 10 6v18H10zm4-4h4v6h-4v-6zm8 0h4v6h-4v-6zm-6-6h4v4h-4v-4z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <span class="logo-text-footer">Palak Developers</span>
                     </div>
-                    <p>Building modern Kenya with quality construction.</p>
+                    <p class="footer-description">
+                        Palak Developers specializes in building, renovating, and maintaining various structures such as
+                        residential and commercial buildings.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
+                <!-- Company Links -->
                 <div class="footer-column">
-                    <h4 class="footer-title">Quick Links</h4>
+                    <h4 class="footer-heading">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
+                <!-- Contact Info -->
                 <div class="footer-column">
-                    <h4 class="footer-title">Contact</h4>
-                    <ul class="footer-links">
-                        <li><a href="tel:+254700000000">+254 700 000 000</a></li>
-                        <li><a href="mailto:info@palakdevelopers.co.ke">info@palakdevelopers.co.ke</a></li>
+                    <h4 class="footer-heading">Get In Touch</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <strong>Address:</strong><br>
+                            54 Muthithi Road, Westlands, Nairobi
+                        </li>
+                        <li>
+                            <strong>Phone:</strong><br>
+                            0791 240 000
+                        </li>
+                        <li>
+                            <strong>Email:</strong><br>
+                            info@palakdevelopers.ke
+                        </li>
                     </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-newsletter-text">Get the latest updates and offers for business services yearly.
+                    </p>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-submit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
 
+            <!-- Dark Strip for Vehicle Animations -->
+            <div class="footer-vehicle-strip">
+                <div class="vehicle-strip-container">
+                    <!-- Animated Construction Vehicles -->
+                    <div class="construction-vehicles">
+                        <!-- Dump Truck -->
+                        <div class="vehicle vehicle-1">
+                            <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="truckBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFB84D;stop-opacity:1" />
+                                        <stop offset="50%" style="stop-color:#FFA826;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#E69620;stop-opacity:1" />
+                                    </linearGradient>
+                                    <radialGradient id="wheelGrad">
+                                        <stop offset="30%" style="stop-color:#2a2a2a;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+                                    </radialGradient>
+                                </defs>
+                                <!-- Chassis -->
+                                <rect x="50" y="95" width="140" height="12" fill="#1a1a1a" rx="2" />
+                                <!-- Dump bed with shading -->
+                                <path d="M 55 50 L 65 30 L 145 30 L 155 50 L 155 95 L 55 95 Z" fill="url(#truckBody)" />
+                                <path d="M 55 50 L 65 30 L 145 30 L 155 50 Z" fill="#FF9510" opacity="0.3" />
+                                <!-- Bed details -->
+                                <line x1="70" y1="35" x2="70" y2="90" stroke="#E69620" stroke-width="2" opacity="0.5" />
+                                <line x1="105" y1="35" x2="105" y2="90" stroke="#E69620" stroke-width="2"
+                                    opacity="0.5" />
+                                <line x1="140" y1="35" x2="140" y2="90" stroke="#E69620" stroke-width="2"
+                                    opacity="0.5" />
+                                <!-- Cabin -->
+                                <path d="M 155 60 L 165 50 L 205 50 L 215 60 L 215 95 L 155 95 Z"
+                                    fill="url(#truckBody)" />
+                                <path d="M 155 60 L 165 50 L 205 50 L 215 60 Z" fill="#FFB84D" opacity="0.4" />
+                                <!-- Windows -->
+                                <path d="M 162 58 L 170 52 L 188 52 L 188 85 L 162 85 Z" fill="#4a5f7f" opacity="0.8" />
+                                <path d="M 192 52 L 207 52 L 210 60 L 210 85 L 192 85 Z" fill="#3a4f6f" opacity="0.8" />
+                                <!-- Window highlights -->
+                                <rect x="165" y="55" width="8" height="12" fill="#87CEEB" opacity="0.3" />
+                                <rect x="195" y="55" width="8" height="12" fill="#87CEEB" opacity="0.3" />
+                                <!-- Grill/bumper -->
+                                <rect x="213" y="70" width="5" height="20" fill="#1a1a1a" rx="1" />
+                                <line x1="214" y1="75" x2="217" y2="75" stroke="#555" stroke-width="1" />
+                                <line x1="214" y1="80" x2="217" y2="80" stroke="#555" stroke-width="1" />
+                                <line x1="214" y1="85" x2="217" y2="85" stroke="#555" stroke-width="1" />
+                                <!-- Wheels with detailed rims -->
+                                <circle cx="80" cy="110" r="20" fill="url(#wheelGrad)" />
+                                <circle cx="80" cy="110" r="13" fill="#2a2a2a" />
+                                <circle cx="80" cy="110" r="8" fill="#FF9510" />
+                                <circle cx="80" cy="110" r="4" fill="#1a1a1a" />
+                                <circle cx="190" cy="110" r="20" fill="url(#wheelGrad)" />
+                                <circle cx="190" cy="110" r="13" fill="#2a2a2a" />
+                                <circle cx="190" cy="110" r="8" fill="#FF9510" />
+                                <circle cx="190" cy="110" r="4" fill="#1a1a1a" />
+                                <!-- Headlight -->
+                                <circle cx="213" cy="65" r="3" fill="#FFE87C" opacity="0.9" />
+                            </svg>
+                        </div>
+
+                        <!-- Excavator -->
+                        <div class="vehicle vehicle-2">
+                            <svg viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="excBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFB84D;stop-opacity:1" />
+                                        <stop offset="60%" style="stop-color:#FFA826;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#E69620;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Boom arm (main arm) with gradient -->
+                                <path d="M 115 70 L 125 65 L 175 25 L 180 30 L 130 70 Z" fill="url(#excBody)" />
+                                <path d="M 115 70 L 120 67 L 170 27 L 175 25 Z" fill="#FFB84D" opacity="0.5" />
+                                <!-- Hydraulic cylinders -->
+                                <rect x="120" y="55" width="35" height="6" fill="#555" rx="2"
+                                    transform="rotate(-32 120 58)" />
+                                <circle cx="120" cy="58" r="3" fill="#333" />
+                                <circle cx="148" cy="42" r="3" fill="#333" />
+                                <!-- Stick (secondary arm) -->
+                                <path d="M 173 28 L 178 23 L 218 5 L 223 8 L 183 28 Z" fill="url(#excBody)" />
+                                <path d="M 173 28 L 176 25 L 216 7 L 218 5 Z" fill="#FF9510" opacity="0.6" />
+                                <!-- Hydraulic for stick -->
+                                <rect x="180" y="18" width="28" height="5" fill="#555" rx="2"
+                                    transform="rotate(-38 180 20)" />
+                                <!-- Bucket -->
+                                <path d="M 218 8 L 235 2 L 245 8 L 248 18 L 238 22 L 228 18 Z" fill="#E69620" />
+                                <path d="M 235 2 L 245 8 L 248 18 L 238 22 Z" fill="#CC8519" />
+                                <!-- Bucket teeth -->
+                                <polygon points="238,22 240,28 242,22" fill="#999" />
+                                <polygon points="243,20 245,26 247,20" fill="#999" />
+                                <!-- Counterweight -->
+                                <rect x="30" y="75" width="28" height="25" fill="#1a1a1a" rx="2" />
+                                <rect x="32" y="78" width="24" height="8" fill="#333" opacity="0.5" />
+                                <!-- Cabin -->
+                                <path d="M 60 55 L 70 45 L 115 45 L 125 55 L 125 90 L 60 90 Z" fill="url(#excBody)" />
+                                <path d="M 60 55 L 70 45 L 115 45 L 125 55 Z" fill="#FFB84D" opacity="0.4" />
+                                <!-- Cabin windows -->
+                                <path d="M 68 52 L 76 47 L 105 47 L 110 52 L 110 82 L 68 82 Z" fill="#4a5f7f"
+                                    opacity="0.75" />
+                                <!-- Window frame -->
+                                <line x1="90" y1="47" x2="90" y2="82" stroke="#2a3f5f" stroke-width="2" />
+                                <!-- Window reflection -->
+                                <rect x="72" y="50" width="12" height="15" fill="#87CEEB" opacity="0.25" />
+                                <!-- Body/House -->
+                                <ellipse cx="92" cy="100" rx="65" ry="16" fill="#E69620" />
+                                <rect x="27" y="85" width="130" height="15" fill="url(#excBody)" rx="3" />
+                                <!-- Tracks -->
+                                <ellipse cx="90" cy="128" rx="75" ry="18" fill="#0a0a0a" />
+                                <rect x="15" y="115" width="150" height="26" fill="#1a1a1a" rx="13" />
+                                <!-- Track wheels -->
+                                <circle cx="35" cy="128" r="11" fill="#2a2a2a" />
+                                <circle cx="60" cy="128" r="9" fill="#333" />
+                                <circle cx="82" cy="128" r="9" fill="#333" />
+                                <circle cx="105" cy="128" r="9" fill="#333" />
+                                <circle cx="127" cy="128" r="9" fill="#333" />
+                                <circle cx="150" cy="128" r="11" fill="#2a2a2a" />
+                                <!-- Track details -->
+                                <rect x="18" y="119" width="145" height="3" fill="#0a0a0a" opacity="0.5" />
+                                <rect x="18" y="135" width="145" height="3" fill="#0a0a0a" opacity="0.5" />
+                            </svg>
+                        </div>
+
+                        <!-- Bulldozer -->
+                        <div class="vehicle vehicle-3">
+                            <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="dozBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFB84D;stop-opacity:1" />
+                                        <stop offset="50%" style="stop-color:#FFA826;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#E69620;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Blade assembly -->
+                                <path d="M 8 75 L 18 68 L 42 68 L 48 75 L 48 115 L 8 118 Z" fill="#CC8519" />
+                                <path d="M 8 75 L 18 68 L 42 68 L 48 75 Z" fill="#E69620" />
+                                <!-- Blade support arms -->
+                                <rect x="35" y="82" width="18" height="6" fill="#1a1a1a" rx="2" />
+                                <rect x="35" y="98" width="18" height="6" fill="#1a1a1a" rx="2" />
+                                <circle cx="35" cy="85" r="3" fill="#333" />
+                                <circle cx="35" cy="101" r="3" fill="#333" />
+                                <!-- Hydraulic cylinders -->
+                                <rect x="28" y="78" width="8" height="28" fill="#555" rx="2" />
+                                <circle cx="32" cy="78" r="4" fill="#333" />
+                                <circle cx="32" cy="106" r="4" fill="#333" />
+                                <!-- Main body -->
+                                <rect x="50" y="70" width="110" height="48" fill="url(#dozBody)" rx="4" />
+                                <rect x="52" y="72" width="106" height="10" fill="#FFB84D" opacity="0.4" rx="2" />
+                                <!-- Engine compartment -->
+                                <rect x="55" y="55" width="45" height="20" fill="url(#dozBody)" rx="2" />
+                                <rect x="58" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <rect x="68" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <rect x="78" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <rect x="88" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <!-- Exhaust pipe -->
+                                <rect x="60" y="45" width="8" height="15" fill="#2a2a2a" rx="2" />
+                                <ellipse cx="64" cy="45" rx="5" ry="3" fill="#1a1a1a" />
+                                <!-- Cabin -->
+                                <path d="M 95 55 L 105 42 L 140 42 L 150 55 L 150 70 L 95 70 Z" fill="url(#dozBody)" />
+                                <path d="M 95 55 L 105 42 L 140 42 L 150 55 Z" fill="#FFB84D" opacity="0.5" />
+                                <!-- Cabin windows -->
+                                <path d="M 100 53 L 108 45 L 135 45 L 142 53 L 142 68 L 100 68 Z" fill="#4a5f7f"
+                                    opacity="0.75" />
+                                <!-- Window frames -->
+                                <line x1="120" y1="45" x2="120" y2="68" stroke="#2a3f5f" stroke-width="2.5" />
+                                <line x1="101" y1="60" x2="141" y2="60" stroke="#2a3f5f" stroke-width="2" />
+                                <!-- Window reflection -->
+                                <rect x="105" y="48" width="10" height="12" fill="#87CEEB" opacity="0.3" />
+                                <rect x="125" y="48" width="10" height="12" fill="#87CEEB" opacity="0.3" />
+                                <!-- Ripper (rear attachment) -->
+                                <path d="M 155 95 L 165 90 L 175 95 L 175 110 L 165 115 Z" fill="#CC8519" />
+                                <polygon points="175,110 178,115 175,120" fill="#999" />
+                                <!-- Track frame -->
+                                <ellipse cx="105" cy="128" rx="72" ry="18" fill="#0a0a0a" />
+                                <rect x="33" y="118" width="144" height="25" fill="#1a1a1a" rx="12" />
+                                <!-- Idler and sprocket wheels (larger) -->
+                                <circle cx="48" cy="130" r="14" fill="url(#wheelGrad)" />
+                                <circle cx="48" cy="130" r="9" fill="#FF9510" />
+                                <circle cx="162" cy="130" r="14" fill="url(#wheelGrad)" />
+                                <circle cx="162" cy="130" r="9" fill="#FF9510" />
+                                <!-- Track rollers -->
+                                <circle cx="75" cy="130" r="10" fill="#2a2a2a" />
+                                <circle cx="95" cy="130" r="10" fill="#333" />
+                                <circle cx="115" cy="130" r="10" fill="#333" />
+                                <circle cx="135" cy="130" r="10" fill="#2a2a2a" />
+                                <!-- Track texture -->
+                                <rect x="36" y="122" width="138" height="3" fill="#0a0a0a" opacity="0.6" />
+                                <rect x="36" y="137" width="138" height="3" fill="#0a0a0a" opacity="0.6" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
             <div class="footer-bottom">
-                <p class="footer-copyright">© 2024 Palak Developers. Part of <a href="https://palakgroup.co.ke"
-                        style="color: var(--color-accent);">The Palak Group</a></p>
+                <p>© 2026 Palak Developers. Part of <a href="https://palakgroup.co.ke" target="_blank">The Palak
+                        Group</a></p>
             </div>
         </div>
     </footer>
 
-    <script type="module" src="./src/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Hero Slider
+        const heroSwiper = new Swiper('.hero-swiper', {
+            loop: true,
+            effect: 'fade',
+            speed: 1500,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        // Sticky Header Behavior
+        const navigationWrapper = document.querySelector('.navigation-wrapper');
+        const topHeader = document.querySelector('.top-header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navigationWrapper.classList.add('sticky');
+                topHeader.style.display = 'none';
+            } else {
+                navigationWrapper.classList.remove('sticky');
+                topHeader.style.display = ''; // Revert to CSS
+            }
+        });
+    </script>
+
+    <!-- Projects Carousel JavaScript -->
+    <script>
+        // Projects Carousel Auto-Scroll
+        const projectsTrack = document.querySelector('.projects-carousel-track');
+        let scrollInterval;
+
+        function scrollProjectsLeft() {
+            if (projectsTrack) {
+                projectsTrack.scrollBy({
+                    left: -350,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        function scrollProjectsRight() {
+            if (projectsTrack) {
+                projectsTrack.scrollBy({
+                    left: 350,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Auto-scroll projects to the left every 3 seconds
+        function startProjectsAutoScroll() {
+            scrollInterval = setInterval(() => {
+                if (projectsTrack) {
+                    const maxScroll = projectsTrack.scrollWidth - projectsTrack.clientWidth;
+
+                    // If reached the end, scroll back to start smoothly
+                    if (projectsTrack.scrollLeft >= maxScroll - 10) {
+                        projectsTrack.scrollTo({
+                            left: 0,
+                            behavior: 'smooth'
+                        });
+                    } else {
+                        projectsTrack.scrollBy({
+                            left: 1,
+                            behavior: 'auto'
+                        });
+                    }
+                }
+            }, 20); // Smooth continuous scroll
+        }
+
+        // Pause auto-scroll on hover
+        if (projectsTrack) {
+            projectsTrack.addEventListener('mouseenter', () => {
+                clearInterval(scrollInterval);
+            });
+
+            projectsTrack.addEventListener('mouseleave', () => {
+                startProjectsAutoScroll();
+            });
+
+            // Start auto-scroll on page load
+            startProjectsAutoScroll();
+        }
+    </script>
+
+    <!-- Navigation JavaScript -->
+    <script src="./src/scripts/navigation.js"></script>
 </body>
 
 </html>

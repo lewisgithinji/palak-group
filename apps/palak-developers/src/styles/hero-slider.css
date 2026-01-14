@@ -1,0 +1,252 @@
+/* ==============================================
+   HERO SLIDER - SWIPER BASED
+   ============================================== */
+
+.dl-slider {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    overflow: hidden;
+}
+
+.hero-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dl-slider-img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Overlay gradient for better text readability */
+.dl-slider-img-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.3) 100%);
+    z-index: 1;
+}
+
+/* Slider Shape Effects */
+.slider-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    opacity: 0.05;
+    z-index: 1;
+}
+
+.slider-shape div {
+    flex: 1;
+    background: white;
+    transform: skewX(-15deg);
+}
+
+/* Slider Content */
+.slider-content-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+.content-width {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.slider-content {
+    max-width: 750px;
+}
+
+/* Caption Styling */
+.dl-caption {
+    margin-bottom: 25px;
+}
+
+.dl-caption.sub-heading .dl-cap {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.dl-caption.sub-heading.is-border .dl-cap {
+    padding-left: 25px;
+}
+
+.dl-caption.sub-heading.is-border .dl-cap::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 2px;
+    background: var(--primary);
+}
+
+.dl-caption.heading .dl-cap {
+    font-family: var(--font-heading);
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.dl-caption.desc .dl-cap {
+    font-size: 17px;
+    color: var(--white);
+    line-height: 1.8;
+}
+
+.slider-btn-wrap {
+    margin-top: 45px;
+}
+
+.dl-el-btn {
+    display: inline-block;
+    padding: 18px 40px;
+    background: var(--primary);
+    color: var(--dark);
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 0;
+    transition: var(--transition);
+}
+
+.dl-el-btn:hover {
+    background: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 168, 38, 0.3);
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+    bottom: 40px !important;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    margin: 0 6px;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary);
+    width: 40px;
+    border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .dl-caption.heading .dl-cap {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 991px) {
+    .dl-slider {
+        min-height: 600px;
+    }
+
+    .dl-caption.heading .dl-cap {
+        font-size: 55px;
+    }
+
+    .content-width {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dl-slider {
+        min-height: 500px;
+        height: auto;
+    }
+
+    .dl-caption.heading .dl-cap {
+        font-size: 42px;
+    }
+
+    .dl-caption.desc .dl-cap {
+        font-size: 15px;
+    }
+
+    .content-width {
+        padding: 0 20px;
+    }
+
+    .slider-shape {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .dl-caption.heading .dl-cap {
+        font-size: 32px;
+    }
+
+    .dl-caption.sub-heading .dl-cap {
+        font-size: 12px;
+    }
+
+    .dl-el-btn {
+        padding: 15px 30px;
+        font-size: 13px;
+    }
+}

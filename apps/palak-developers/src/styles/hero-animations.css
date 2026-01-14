@@ -1,0 +1,117 @@
+/* ==============================================
+   HERO SLIDER ANIMATIONS & PARALLAX
+   ============================================== */
+
+/* Slider Caption Animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Caption Animation Classes */
+.dl-caption .dl-cap {
+    opacity: 0;
+}
+
+.swiper-slide-active .dl-caption.sub-heading .dl-cap {
+    animation: slideInLeft 0.8s ease-out 0.2s forwards;
+}
+
+.swiper-slide-active .dl-caption.heading .dl-cap {
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+.swiper-slide-active .dl-caption.desc .dl-cap {
+    animation: fadeInUp 1s ease-out 0.8s forwards;
+}
+
+.slider-btn-wrap {
+    opacity: 0;
+}
+
+.swiper-slide-active .slider-btn-wrap {
+    animation: fadeInUp 1s ease-out 1.1s forwards;
+}
+
+/* Parallax Effect for Slider Images */
+.slider-img {
+    transition: transform 0.3s ease-out;
+}
+
+.swiper-slide-active .slider-img {
+    animation: subtleZoom 8s ease-in-out infinite alternate;
+}
+
+@keyframes subtleZoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Smooth Fade Transitions */
+.swiper-slide {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+}
+
+/* Pagination Animation */
+.swiper-pagination-bullet {
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.swiper-pagination-bullet-active {
+    transform: scale(1.2);
+    background: var(--primary) !important;
+}

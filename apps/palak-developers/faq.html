@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" data-brand="palak-developers">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Frequently Asked Questions about Palak Developers - Construction services, processes, pricing, and more.">
+    <title>FAQ - Palak Developers</title>
+
+    <!-- Buildex Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Rubik:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Buildex Theme CSS -->
+    <link rel="stylesheet" href="./src/styles/buildex.css">
+    <link rel="stylesheet" href="./src/styles/enhancements.css">
+    <link rel="stylesheet" href="./src/styles/mobile-menu.css">
+
+    <style>
+        /* FAQ Accordion Styles */
+        .faq-section {
+            padding: 100px 0;
+            background: var(--buildex-bg-light-color);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .faq-category {
+            margin-bottom: 40px;
+        }
+
+        .category-title {
+            font-family: var(--buildex-primary-font);
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--buildex-dark);
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--buildex-primary-color);
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 30px;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.3s;
+        }
+
+        .faq-question:hover {
+            background: rgba(217, 119, 6, 0.05);
+        }
+
+        .faq-question h3 {
+            font-family: var(--buildex-primary-font);
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--buildex-dark);
+            margin: 0;
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background: var(--buildex-primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 30px 25px 30px;
+        }
+
+        .faq-answer p {
+            color: var(--buildex-grey-color);
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .faq-question {
+                padding: 20px;
+            }
+
+            .faq-question h3 {
+                font-size: 16px;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 0 20px 20px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="navigation-wrapper">
+            <div class="container-fluid">
+                <div class="main-header-wrapper">
+                    <div class="site-logo">
+                        <a href="/">
+                            <div class="logo-icon">
+                                <svg viewBox="0 0 40 40" fill="none">
+                                    <path d="M10 32V14l10-6 10 6v18H10zm4-4h4v6h-4v-6zm8 0h4v6h-4v-6zm-6-6h4v4h-4v-4z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <span class="logo-text">Palak Developers</span>
+                        </a>
+                    </div>
+
+                    <div class="main-header-items">
+                        <div class="top-header">
+                            <ul class="top-left">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                    <span>0791 240 000</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                    <a href="mailto:info@palakdevelopers.ke">info@palakdevelopers.ke</a>
+                                </li>
+                            </ul>
+                            <div class="top-right">
+                                <ul class="top-header-nav">
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="faq.html" class="active">Faqs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="navigation-wrap">
+                            <nav class="navigation-menu">
+                                <ul class="main-menu">
+                                    <li class="menu-item"><a href="/">Home</a></li>
+                                    <li class="menu-item has-dropdown active">
+                                        <a href="about.html">Company</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="faq.html" class="active">FAQ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a href="services.html">Services</a></li>
+                                    <li class="menu-item"><a href="projects.html">Projects</a></li>
+                                    <li class="menu-item"><a href="blog.html">Blog</a></li>
+                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header-right">
+                                <div class="dl-search-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </div>
+                                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <a href="contact.html" class="default-btn">GET SOLUTION</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay"></div>
+
+    <!-- Page Hero -->
+    <section
+        style="background: linear-gradient(rgba(26, 29, 46, 0.85), rgba(26, 29, 46, 0.85)), url('/images/project-6.png'); background-size: cover; background-position: center; padding: 120px 0 80px;">
+        <div class="container" style="max-width: 1320px; margin: 0 auto; padding: 0 15px; text-align: center;">
+            <h1
+                style="font-family: var(--buildex-primary-font); font-size: 48px; font-weight: 700; color: white; margin-bottom: 20px;">
+                Frequently Asked Questions</h1>
+            <p style="color: rgba(255,255,255,0.8); font-size: 18px; margin-bottom: 30px;">Find answers to common
+                questions about our services and processes</p>
+            <div
+                style="display: flex; align-items: center; justify-content: center; gap: 10px; color: rgba(255,255,255,0.6); font-size: 14px;">
+                <a href="/" style="color: rgba(255,255,255,0.6); text-decoration: none;">Home</a><span>/</span><span
+                    style="color: var(--buildex-primary-color);">FAQ</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+
+            <!-- General Questions -->
+            <div class="faq-category">
+                <h2 class="category-title">General Questions</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What types of projects does Palak Developers handle?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Palak Developers specializes in a wide range of construction projects including residential
+                            buildings (houses, apartments, villas), commercial properties (office buildings, retail
+                            spaces, warehouses), mixed-use developments, renovations, and general contracting services.
+                            We handle projects of various scales from small renovations to large-scale commercial
+                            developments.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How long has Palak Developers been in business?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Palak Developers has been serving Kenya for over 25 years since our establishment in 1999.
+                            We are part of The Palak Group, a trusted name in East African business. Our decades of
+                            experience have allowed us to complete hundreds of successful projects and build lasting
+                            relationships with our clients.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What areas do you serve?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While our head office is located in Westlands, Nairobi, we serve clients throughout Kenya.
+                            We have successfully completed projects in Nairobi, Mombasa, Kisumu, Nakuru, and other
+                            major cities. For regional projects, we assess each opportunity individually to ensure we
+                            can deliver our standard of excellence.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you work with individual homeowners or only corporate clients?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We work with both individual homeowners and corporate clients. Whether you're building your
+                            dream home or developing a commercial complex, we bring the same level of professionalism,
+                            quality, and attention to detail to every project regardless of size.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services & Process -->
+            <div class="faq-category">
+                <h2 class="category-title">Services & Process</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What is your construction process from start to finish?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our process includes: 1) Initial Consultation & Site Visit, 2) Design & Planning Phase, 3)
+                            Budgeting & Contract Signing, 4) Permit Acquisition, 5) Construction Phase with regular
+                            progress updates, 6) Quality Inspections, 7) Project Handover, and 8) Post-Construction
+                            Support. We keep you informed at every stage and ensure transparency throughout.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you handle permits and approvals?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we handle all necessary permits and approvals from the relevant authorities including
+                            the National Construction Authority (NCA), county governments, and NEMA environmental
+                            clearances. This is included in our comprehensive project management service, saving you
+                            time and ensuring full compliance with Kenyan building regulations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I customize my project design?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We encourage client input and customization. Our architecture and design team
+                            works closely with you to understand your vision, preferences, and requirements. We provide
+                            multiple design options and revisions to ensure the final plan perfectly matches your needs
+                            while adhering to structural integrity and building codes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you provide architecture and design services?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer complete architecture and design services as part of our comprehensive
+                            construction solutions. Our in-house team of qualified architects can create custom designs
+                            or work with plans you've already developed. We use modern design software including BIM for
+                            accurate 3D visualization.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing & Payment -->
+            <div class="faq-category">
+                <h2 class="category-title">Pricing & Payment</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do you calculate project costs?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project costs are calculated based on several factors: project size and scope, materials
+                            specification, design complexity, site conditions, and timeline requirements. After the
+                            initial consultation, we provide a detailed quote breaking down all costs including
+                            materials, labor, permits, and contingencies. We believe in transparent pricing with no
+                            hidden fees.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What payment methods do you accept?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept bank transfers, cheques, and mobile money payments (M-Pesa) for your convenience.
+                            Payment is typically structured in milestones tied to project progress: initial deposit,
+                            foundation completion, roofing, finishing, and final handover. This protects both parties
+                            and ensures work quality at each stage.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you offer financing options?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While we don't directly offer financing, we have partnerships with several Kenyan banks and
+                            financial institutions that provide construction loans and mortgages. We can introduce you
+                            to these partners and assist with the documentation required for loan applications. Many of
+                            our clients have successfully secured financing through these channels.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I get a free quote?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide free initial consultations and preliminary cost estimates. After an initial
+                            discussion about your project, we can visit the site and provide a ballpark figure. For a
+                            detailed, accurate quote, we'll need to conduct a thorough site assessment and review your
+                            design requirements, which is also provided at no cost.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline & Delivery -->
+            <div class="faq-category">
+                <h2 class="category-title">Timeline & Delivery</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How long does a typical project take?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Timeline varies by project size and complexity. A typical residential house takes 6-12
+                            months, while larger commercial projects may take 12-24 months. Renovations can be completed
+                            in 2-6 months depending on scope. We provide a detailed timeline during the planning phase
+                            and commit to realistic deadlines with regular progress updates.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What happens if there are delays?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We plan projects with buffer time to account for unforeseen circumstances like weather or
+                            material delivery delays. If delays occur, we immediately communicate with you, explain the
+                            cause, and provide a revised timeline. Our contracts include clear terms regarding delays
+                            and any associated costs or compensations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I track my project progress?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We provide regular progress reports with photos and updates. You'll have a dedicated
+                            project manager who is your main point of contact. We encourage site visits at agreed
+                            intervals so you can see the progress firsthand. We also provide milestone completion
+                            certificates before proceeding to the next payment stage.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- After-Sales Support -->
+            <div class="faq-category">
+                <h2 class="category-title">After-Sales Support</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do your projects come with a warranty?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our projects come with a comprehensive warranty. We typically provide a 12-month
+                            defects liability period where we'll address any issues arising from workmanship or
+                            materials at no extra cost. Structural components often carry extended warranties. Specific
+                            warranty terms are detailed in your contract.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What maintenance services do you offer?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer ongoing maintenance services including regular inspections, repairs, renovations,
+                            painting, roofing maintenance, plumbing, and electrical work. Many of our clients opt for
+                            annual maintenance contracts to keep their properties in optimal condition. Contact us for a
+                            customized maintenance plan.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do I report issues after project completion?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply contact us via phone (0791 240 000), email (info@palakdevelopers.ke), or through our
+                            website contact form. We prioritize warranty claims and aim to respond within 24 hours. Our
+                            maintenance team will assess the issue and schedule repairs promptly, often within 3-5
+                            business days for non-emergency items.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Have Questions CTA -->
+            <div style="background: #FFA826; border-radius: 10px; padding: 50px; text-align: center; margin-top: 60px;">
+                <h2
+                    style="font-family: 'Barlow Condensed', sans-serif; font-size: 32px; font-weight: 700; color: #ffffff; margin-bottom: 20px;">
+                    Still Have Questions?</h2>
+                <p style="color: #ffffff; font-size: 16px; margin-bottom: 30px;">Our team is here to help.
+                    Get in touch with us for personalized assistance.</p>
+                <a href="contact.html" class="default-btn" style="background: #ffffff; color: #1A1D2E;">Contact Us
+                    Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-buildex">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon-footer">
+                            <svg width="30" height="30" viewBox="0 0 40 40" fill="none">
+                                <path d="M10 32V14l10-6 10 6v18H10zm4-4h4v6h-4v-6zm8 0h4v6h-4v-6zm-6-6h4v4h-4v-4z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <span class="logo-text-footer">Palak Developers</span>
+                    </div>
+                    <p class="footer-description">
+                        Palak Developers specializes in building, renovating, and maintaining various structures such as
+                        residential and commercial buildings.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Get In Touch</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <strong>Address:</strong><br>
+                            54 Muthithi Road, Westlands, Nairobi
+                        </li>
+                        <li>
+                            <strong>Phone:</strong><br>
+                            0791 240 000
+                        </li>
+                        <li>
+                            <strong>Email:</strong><br>
+                            info@palakdevelopers.ke
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-newsletter-text">Get the latest updates and offers for business services yearly.
+                    </p>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-submit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Dark Strip for Vehicle Animations -->
+            <div class="footer-vehicle-strip">
+                <div class="vehicle-strip-container">
+                    <!-- Animated Construction Vehicles -->
+                    <div class="construction-vehicles">
+                        <!-- Dump Truck -->
+                        <div class="vehicle vehicle-1">
+                            <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="truckBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFB84D;stop-opacity:1" />
+                                        <stop offset="50%" style="stop-color:#FFA826;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#E69620;stop-opacity:1" />
+                                    </linearGradient>
+                                    <radialGradient id="wheelGrad">
+                                        <stop offset="30%" style="stop-color:#2a2a2a;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+                                    </radialGradient>
+                                </defs>
+                                <!-- Chassis -->
+                                <rect x="50" y="95" width="140" height="12" fill="#1a1a1a" rx="2" />
+                                <!-- Dump bed with shading -->
+                                <path d="M 55 50 L 65 30 L 145 30 L 155 50 L 155 95 L 55 95 Z" fill="url(#truckBody)" />
+                                <path d="M 55 50 L 65 30 L 145 30 L 155 50 Z" fill="#FF9510" opacity="0.3" />
+                                <!-- Bed details -->
+                                <line x1="70" y1="35" x2="70" y2="90" stroke="#E69620" stroke-width="2" opacity="0.5" />
+                                <line x1="105" y1="35" x2="105" y2="90" stroke="#E69620" stroke-width="2"
+                                    opacity="0.5" />
+                                <line x1="140" y1="35" x2="140" y2="90" stroke="#E69620" stroke-width="2"
+                                    opacity="0.5" />
+                                <!-- Cabin -->
+                                <path d="M 155 60 L 165 50 L 205 50 L 215 60 L 215 95 L 155 95 Z"
+                                    fill="url(#truckBody)" />
+                                <path d="M 155 60 L 165 50 L 205 50 L 215 60 Z" fill="#FFB84D" opacity="0.4" />
+                                <!-- Windows -->
+                                <path d="M 162 58 L 170 52 L 188 52 L 188 85 L 162 85 Z" fill="#4a5f7f" opacity="0.8" />
+                                <path d="M 192 52 L 207 52 L 210 60 L 210 85 L 192 85 Z" fill="#3a4f6f" opacity="0.8" />
+                                <!-- Window highlights -->
+                                <rect x="165" y="55" width="8" height="12" fill="#87CEEB" opacity="0.3" />
+                                <rect x="195" y="55" width="8" height="12" fill="#87CEEB" opacity="0.3" />
+                                <!-- Grill/bumper -->
+                                <rect x="213" y="70" width="5" height="20" fill="#1a1a1a" rx="1" />
+                                <line x1="214" y1="75" x2="217" y2="75" stroke="#555" stroke-width="1" />
+                                <line x1="214" y1="80" x2="217" y2="80" stroke="#555" stroke-width="1" />
+                                <line x1="214" y1="85" x2="217" y2="85" stroke="#555" stroke-width="1" />
+                                <!-- Wheels with detailed rims -->
+                                <circle cx="80" cy="110" r="20" fill="url(#wheelGrad)" />
+                                <circle cx="80" cy="110" r="13" fill="#2a2a2a" />
+                                <circle cx="80" cy="110" r="8" fill="#FF9510" />
+                                <circle cx="80" cy="110" r="4" fill="#1a1a1a" />
+                                <circle cx="190" cy="110" r="20" fill="url(#wheelGrad)" />
+                                <circle cx="190" cy="110" r="13" fill="#2a2a2a" />
+                                <circle cx="190" cy="110" r="8" fill="#FF9510" />
+                                <circle cx="190" cy="110" r="4" fill="#1a1a1a" />
+                                <!-- Headlight -->
+                                <circle cx="213" cy="65" r="3" fill="#FFE87C" opacity="0.9" />
+                            </svg>
+                        </div>
+
+                        <!-- Excavator -->
+                        <div class="vehicle vehicle-2">
+                            <svg viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="excBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFB84D;stop-opacity:1" />
+                                        <stop offset="60%" style="stop-color:#FFA826;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#E69620;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Boom arm (main arm) with gradient -->
+                                <path d="M 115 70 L 125 65 L 175 25 L 180 30 L 130 70 Z" fill="url(#excBody)" />
+                                <path d="M 115 70 L 120 67 L 170 27 L 175 25 Z" fill="#FFB84D" opacity="0.5" />
+                                <!-- Hydraulic cylinders -->
+                                <rect x="120" y="55" width="35" height="6" fill="#555" rx="2"
+                                    transform="rotate(-32 120 58)" />
+                                <circle cx="120" cy="58" r="3" fill="#333" />
+                                <circle cx="148" cy="42" r="3" fill="#333" />
+                                <!-- Stick (secondary arm) -->
+                                <path d="M 173 28 L 178 23 L 218 5 L 223 8 L 183 28 Z" fill="url(#excBody)" />
+                                <path d="M 173 28 L 176 25 L 216 7 L 218 5 Z" fill="#FF9510" opacity="0.6" />
+                                <!-- Hydraulic for stick -->
+                                <rect x="180" y="18" width="28" height="5" fill="#555" rx="2"
+                                    transform="rotate(-38 180 20)" />
+                                <!-- Bucket -->
+                                <path d="M 218 8 L 235 2 L 245 8 L 248 18 L 238 22 L 228 18 Z" fill="#E69620" />
+                                <path d="M 235 2 L 245 8 L 248 18 L 238 22 Z" fill="#CC8519" />
+                                <!-- Bucket teeth -->
+                                <polygon points="238,22 240,28 242,22" fill="#999" />
+                                <polygon points="243,20 245,26 247,20" fill="#999" />
+                                <!-- Counterweight -->
+                                <rect x="30" y="75" width="28" height="25" fill="#1a1a1a" rx="2" />
+                                <rect x="32" y="78" width="24" height="8" fill="#333" opacity="0.5" />
+                                <!-- Cabin -->
+                                <path d="M 60 55 L 70 45 L 115 45 L 125 55 L 125 90 L 60 90 Z" fill="url(#excBody)" />
+                                <path d="M 60 55 L 70 45 L 115 45 L 125 55 Z" fill="#FFB84D" opacity="0.4" />
+                                <!-- Cabin windows -->
+                                <path d="M 68 52 L 76 47 L 105 47 L 110 52 L 110 82 L 68 82 Z" fill="#4a5f7f"
+                                    opacity="0.75" />
+                                <!-- Window frame -->
+                                <line x1="90" y1="47" x2="90" y2="82" stroke="#2a3f5f" stroke-width="2" />
+                                <!-- Window reflection -->
+                                <rect x="72" y="50" width="12" height="15" fill="#87CEEB" opacity="0.25" />
+                                <!-- Body/House -->
+                                <ellipse cx="92" cy="100" rx="65" ry="16" fill="#E69620" />
+                                <rect x="27" y="85" width="130" height="15" fill="url(#excBody)" rx="3" />
+                                <!-- Tracks -->
+                                <ellipse cx="90" cy="128" rx="75" ry="18" fill="#0a0a0a" />
+                                <rect x="15" y="115" width="150" height="26" fill="#1a1a1a" rx="13" />
+                                <!-- Track wheels -->
+                                <circle cx="35" cy="128" r="11" fill="#2a2a2a" />
+                                <circle cx="60" cy="128" r="9" fill="#333" />
+                                <circle cx="82" cy="128" r="9" fill="#333" />
+                                <circle cx="105" cy="128" r="9" fill="#333" />
+                                <circle cx="127" cy="128" r="9" fill="#333" />
+                                <circle cx="150" cy="128" r="11" fill="#2a2a2a" />
+                                <!-- Track details -->
+                                <rect x="18" y="119" width="145" height="3" fill="#0a0a0a" opacity="0.5" />
+                                <rect x="18" y="135" width="145" height="3" fill="#0a0a0a" opacity="0.5" />
+                            </svg>
+                        </div>
+
+                        <!-- Bulldozer -->
+                        <div class="vehicle vehicle-3">
+                            <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="dozBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFB84D;stop-opacity:1" />
+                                        <stop offset="50%" style="stop-color:#FFA826;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#E69620;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Blade assembly -->
+                                <path d="M 8 75 L 18 68 L 42 68 L 48 75 L 48 115 L 8 118 Z" fill="#CC8519" />
+                                <path d="M 8 75 L 18 68 L 42 68 L 48 75 Z" fill="#E69620" />
+                                <!-- Blade support arms -->
+                                <rect x="35" y="82" width="18" height="6" fill="#1a1a1a" rx="2" />
+                                <rect x="35" y="98" width="18" height="6" fill="#1a1a1a" rx="2" />
+                                <circle cx="35" cy="85" r="3" fill="#333" />
+                                <circle cx="35" cy="101" r="3" fill="#333" />
+                                <!-- Hydraulic cylinders -->
+                                <rect x="28" y="78" width="8" height="28" fill="#555" rx="2" />
+                                <circle cx="32" cy="78" r="4" fill="#333" />
+                                <circle cx="32" cy="106" r="4" fill="#333" />
+                                <!-- Main body -->
+                                <rect x="50" y="70" width="110" height="48" fill="url(#dozBody)" rx="4" />
+                                <rect x="52" y="72" width="106" height="10" fill="#FFB84D" opacity="0.4" rx="2" />
+                                <!-- Engine compartment -->
+                                <rect x="55" y="55" width="45" height="20" fill="url(#dozBody)" rx="2" />
+                                <rect x="58" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <rect x="68" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <rect x="78" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <rect x="88" y="58" width="6" height="10" fill="#1a1a1a" rx="1" />
+                                <!-- Exhaust pipe -->
+                                <rect x="60" y="45" width="8" height="15" fill="#2a2a2a" rx="2" />
+                                <ellipse cx="64" cy="45" rx="5" ry="3" fill="#1a1a1a" />
+                                <!-- Cabin -->
+                                <path d="M 95 55 L 105 42 L 140 42 L 150 55 L 150 70 L 95 70 Z" fill="url(#dozBody)" />
+                                <path d="M 95 55 L 105 42 L 140 42 L 150 55 Z" fill="#FFB84D" opacity="0.5" />
+                                <!-- Cabin windows -->
+                                <path d="M 100 53 L 108 45 L 135 45 L 142 53 L 142 68 L 100 68 Z" fill="#4a5f7f"
+                                    opacity="0.75" />
+                                <!-- Window frames -->
+                                <line x1="120" y1="45" x2="120" y2="68" stroke="#2a3f5f" stroke-width="2.5" />
+                                <line x1="101" y1="60" x2="141" y2="60" stroke="#2a3f5f" stroke-width="2" />
+                                <!-- Window reflection -->
+                                <rect x="105" y="48" width="10" height="12" fill="#87CEEB" opacity="0.3" />
+                                <rect x="125" y="48" width="10" height="12" fill="#87CEEB" opacity="0.3" />
+                                <!-- Ripper (rear attachment) -->
+                                <path d="M 155 95 L 165 90 L 175 95 L 175 110 L 165 115 Z" fill="#CC8519" />
+                                <polygon points="175,110 178,115 175,120" fill="#999" />
+                                <!-- Track frame -->
+                                <ellipse cx="105" cy="128" rx="72" ry="18" fill="#0a0a0a" />
+                                <rect x="33" y="118" width="144" height="25" fill="#1a1a1a" rx="12" />
+                                <!-- Idler and sprocket wheels (larger) -->
+                                <circle cx="48" cy="130" r="14" fill="url(#wheelGrad)" />
+                                <circle cx="48" cy="130" r="9" fill="#FF9510" />
+                                <circle cx="162" cy="130" r="14" fill="url(#wheelGrad)" />
+                                <circle cx="162" cy="130" r="9" fill="#FF9510" />
+                                <!-- Track rollers -->
+                                <circle cx="75" cy="130" r="10" fill="#2a2a2a" />
+                                <circle cx="95" cy="130" r="10" fill="#333" />
+                                <circle cx="115" cy="130" r="10" fill="#333" />
+                                <circle cx="135" cy="130" r="10" fill="#2a2a2a" />
+                                <!-- Track texture -->
+                                <rect x="36" y="122" width="138" height="3" fill="#0a0a0a" opacity="0.6" />
+                                <rect x="36" y="137" width="138" height="3" fill="#0a0a0a" opacity="0.6" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>© 2026 Palak Developers. Part of <a href="https://palakgroup.co.ke" target="_blank">The Palak
+                        Group</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Navigation JavaScript -->
+    <script src="./src/scripts/navigation.js"></script>
+
+    <script>
+        // Sticky Header Behavior
+        const navigationWrapper = document.querySelector('.navigation-wrapper');
+        const topHeader = document.querySelector('.top-header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navigationWrapper.classList.add('sticky');
+                topHeader.style.display = 'none';
+            } else {
+                navigationWrapper.classList.remove('sticky');
+                topHeader.style.display = '';
+            }
+        });
+
+        // FAQ Accordion Functionality
+        function toggleFAQ(element) {
+            const faqItem = element.closest('.faq-item');
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Open clicked FAQ if it wasn't already active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+    </script>
+</body>
+
+</html>
