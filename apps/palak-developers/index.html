@@ -467,72 +467,10 @@
                     </svg>
                 </button>
 
-                <div class="projects-carousel-track">
-                    <!-- Project Card 1 -->
-                    <div class="project-card-carousel">
-                        <div class="project-card-image">
-                            <img src="/images/project-1.png" alt="Intern Commerce Centre">
-                        </div>
-                        <div class="project-card-info">
-                            <span class="project-category">BUILDINGS</span>
-                            <h3 class="project-title">Intern Commerce Centre</h3>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 2 -->
-                    <div class="project-card-carousel">
-                        <div class="project-card-image">
-                            <img src="/images/project-2.png" alt="Petron Towers Kuala Lumpur">
-                        </div>
-                        <div class="project-card-info">
-                            <span class="project-category">FACTORY</span>
-                            <h3 class="project-title">Petron Towers Kuala Lumpur</h3>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 3 -->
-                    <div class="project-card-carousel">
-                        <div class="project-card-image">
-                            <img src="/images/project-3.png" alt="The White House">
-                        </div>
-                        <div class="project-card-info">
-                            <span class="project-category">EQUIPMENT</span>
-                            <h3 class="project-title">The White House</h3>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 4 -->
-                    <div class="project-card-carousel">
-                        <div class="project-card-image">
-                            <img src="/images/hero-bg.png" alt="World Trade Center">
-                        </div>
-                        <div class="project-card-info">
-                            <span class="project-category">BUILDINGS</span>
-                            <h3 class="project-title">World Trade Center New York</h3>
-                        </div>
-                    </div>
-
-                    <!-- Duplicate cards for infinite scroll effect -->
-                    <div class="project-card-carousel">
-                        <div class="project-card-image">
-                            <img src="/images/project-1.png" alt="Intern Commerce Centre">
-                        </div>
-                        <div class="project-card-info">
-                            <span class="project-category">BUILDINGS</span>
-                            <h3 class="project-title">Intern Commerce Centre</h3>
-                        </div>
-                    </div>
-
-                    <div class="project-card-carousel">
-                        <div class="project-card-image">
-                            <img src="/images/project-2.png" alt="Petron Towers">
-                        </div>
-                        <div class="project-card-info">
-                            <span class="project-category">FACTORY</span>
-                            <h3 class="project-title">Petron Towers Kuala Lumpur</h3>
-                        </div>
-                    </div>
+                <div class="projects-carousel-track" id="home-projects-carousel">
+                    <!-- Projects will be dynamically loaded from projects.js -->
                 </div>
+
 
                 <button class="carousel-arrow carousel-arrow-right" onclick="scrollProjectsRight()">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1152,6 +1090,40 @@
             } else {
                 navigationWrapper.classList.remove('sticky');
                 topHeader.style.display = ''; // Revert to CSS
+            }
+        });
+    </script>
+
+    <!-- Load Projects Data -->
+    <script src="./src/data/projects.js"></script>
+
+    <!-- Homepage Projects Carousel Script -->
+    <script>
+        // Populate homepage carousel with real projects
+        document.addEventListener('DOMContentLoaded', () => {
+            const carouselTrack = document.getElementById('home-projects-carousel');
+
+            if (carouselTrack && typeof projectsData !== 'undefined') {
+                // Take first 6 completed projects for the homepage
+                const featuredProjects = projectsData.filter(p => p.status === 'Completed').slice(0, 6);
+
+                // Render projects twice for infinite scroll effect
+                const renderProjects = () => {
+                    return featuredProjects.map(project => `
+                        <div class="project-card-carousel">
+                            <div class="project-card-image">
+                                <img src="${project.images[0]}" alt="${project.name}">
+                            </div>
+                            <div class="project-card-info">
+                                <span class="project-category">${project.category.toUpperCase()}</span>
+                                <h3 class="project-title">${project.name}</h3>
+                            </div>
+                        </div>
+                    `).join('');
+                };
+
+                // Add cards twice for seamless infinite scroll
+                carouselTrack.innerHTML = renderProjects() + renderProjects();
             }
         });
     </script>

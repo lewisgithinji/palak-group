@@ -269,9 +269,9 @@ const projectsData = [
         ],
         amenities: ["Smart City Infrastructure", "Green Building", "Modern Design", "Landscaping"],
         images: [
-            "./images/projects/tatu-city-bungalow/1.jpg",
-            "./images/projects/tatu-city-bungalow/2.jpg",
-            "./images/projects/tatu-city-bungalow/3.jpg"
+            'images/projects/tatu-city-bungalow/exterior-01.jpg',
+            'images/projects/tatu-city-bungalow/livingroom-01.jpg',
+            'images/projects/tatu-city-bungalow/bedroom-01.jpg'
         ],
         specs: {
             "Project Type": "Residential Bungalow",
@@ -279,6 +279,47 @@ const projectsData = [
             "Status": "Under Construction",
             "Started": "June 2025"
         }
+    },
+    {
+        id: 9,
+        name: "Wild Residence",
+        slug: "wild-residence",
+        category: "Residential",
+        status: "Completed",
+        location: "1st Parklands Avenue, Nairobi",
+        timeline: {
+            start: "Jan 2018",
+            end: "Dec 2020"
+        },
+        description: "A flagship 20-floor luxury apartment building setting a new standard for high-rise living in Nairobi. Wild Residence represents the pinnacle of modern residential construction with premium finishes, state-of-the-art amenities, and contemporary architectural design. This landmark tower features multiple luxury units with breathtaking city views, high-end fixtures, and a sophisticated lifestyle environment.",
+        features: [
+            "20-floor luxury high-rise tower",
+            "Prime 1st Parklands Avenue location",
+            "Contemporary architectural design with glass facades",
+            "Premium residential units with city views",
+            "State-of-the-art construction techniques",
+            "Multiple unit configurations available"
+        ],
+        amenities: [
+            "High-speed elevators",
+            "24/7 security with CCTV surveillance",
+            "Backup power generator",
+            "Modern elegant lobby",
+            "Fitness center",
+            "Visitor parking",
+            "Professional property management"
+        ],
+        specs: {
+            "Building Height": "20 Floors",
+            "Location": "1st Parklands Avenue, Nairobi",
+            "Type": "Luxury Residential Tower",
+            "Status": "Completed",
+            "Year Completed": "2020",
+            "Units": "Multiple luxury apartments"
+        },
+        images: [
+            'images/projects/wild-residence/exterior-01.png'
+        ]
     }
 ];
 
