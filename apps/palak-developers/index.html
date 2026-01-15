@@ -297,7 +297,7 @@
         </div>
     </section>
 
-    <!-- Services Section - Buildex Style -->
+    <!-- Services Section - Buildex Style with Horizontal Carousel -->
     <section class="services-section-buildex">
         <div class="services-container">
             <!-- Section Header -->
@@ -307,107 +307,154 @@
                     Building the world with quality <span class="highlight-yellow">services!</span>
                 </h2>
                 <p class="services-description">
-                    Construction is a general term meaning the art and science to form objects systems or organizations.
+                    From residential buildings to commercial developments, we deliver comprehensive construction
+                    solutions
+                    tailored to your needs.
                 </p>
             </div>
 
-            <!-- Service Cards Grid -->
-            <div class="services-grid">
-                <!-- Service Card 1 - Automobile Manufacturing -->
-                <div class="service-card-buildex">
-                    <div class="service-image-wrapper">
-                        <img src="./images/service-1.png" alt="Automobile Manufacturing" class="service-image">
-                    </div>
-                    <div class="service-content-wrapper">
-                        <div class="service-icon-buildex">
-                            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16 40L24 32L32 40L40 32L48 40" stroke="currentColor" stroke-width="2.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <circle cx="32" cy="24" r="8" stroke="currentColor" stroke-width="2.5" />
-                                <circle cx="20" cy="48" r="4" stroke="currentColor" stroke-width="2.5" />
-                                <circle cx="44" cy="48" r="4" stroke="currentColor" stroke-width="2.5" />
-                                <path d="M24 48H40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
-                            </svg>
-                        </div>
-                        <h3 class="service-title-buildex">Automobile<br>Manufacturing</h3>
-                        <p class="service-desc-buildex">Construction is a general term meaning the art and science form
-                            objects.</p>
-                        <a href="services.html" class="service-link-buildex">Read More</a>
-                    </div>
+            <!-- Service Cards Carousel -->
+            <div class="services-carousel-wrapper">
+                <button class="carousel-arrow carousel-arrow-left" onclick="scrollServicesLeft()"
+                    aria-label="Previous services">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+
+                <div class="services-grid" id="home-services-grid">
+                    <!-- Service cards will be dynamically loaded from services.js -->
                 </div>
 
-                <!-- Service Card 2 - Mechanical Power Engineering -->
-                <div class="service-card-buildex">
-                    <div class="service-image-wrapper">
-                        <img src="./images/service-2.png" alt="Mechanical Power Engineering" class="service-image">
-                    </div>
-                    <div class="service-content-wrapper">
-                        <div class="service-icon-buildex">
-                            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="2.5" />
-                                <path d="M32 14V20M32 44V50M50 32H44M20 32H14" stroke="currentColor" stroke-width="2.5"
-                                    stroke-linecap="round" />
-                                <path d="M44 20L40 24M24 40L20 44M44 44L40 40M24 24L20 20" stroke="currentColor"
-                                    stroke-width="2.5" stroke-linecap="round" />
-                            </svg>
-                        </div>
-                        <h3 class="service-title-buildex">Mechanical Power<br>Engineering</h3>
-                        <p class="service-desc-buildex">Construction is a general term meaning the art and science form
-                            objects.</p>
-                        <a href="services.html" class="service-link-buildex">Read More</a>
-                    </div>
-                </div>
-
-                <!-- Service Card 3 - Oil Gas Petroleum Industry -->
-                <div class="service-card-buildex">
-                    <div class="service-image-wrapper">
-                        <img src="./images/service-3.png" alt="Oil Gas Petroleum Industry" class="service-image">
-                    </div>
-                    <div class="service-content-wrapper">
-                        <div class="service-icon-buildex">
-                            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28 48V24C28 20 26 16 22 16C18 16 16 20 16 24V48" stroke="currentColor"
-                                    stroke-width="2.5" stroke-linecap="round" />
-                                <path d="M36 48V28L42 16L48 28V48" stroke="currentColor" stroke-width="2.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M12 48H52" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
-                            </svg>
-                        </div>
-                        <h3 class="service-title-buildex">Oil Gas Petroleum<br>Industry</h3>
-                        <p class="service-desc-buildex">Construction is a general term meaning the art and science form
-                            objects.</p>
-                        <a href="services.html" class="service-link-buildex">Read More</a>
-                    </div>
-                </div>
-
-                <!-- Service Card 4 - Renovation and Repurpose -->
-                <div class="service-card-buildex">
-                    <div class="service-image-wrapper">
-                        <img src="./images/service-4.png" alt="Renovation and Repurpose" class="service-image">
-                    </div>
-                    <div class="service-content-wrapper">
-                        <div class="service-icon-buildex">
-                            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 16L20 28V48H44V28L32 16Z" stroke="currentColor" stroke-width="2.5"
-                                    stroke-linejoin="round" />
-                                <path d="M28 48V36H36V48" stroke="currentColor" stroke-width="2.5"
-                                    stroke-linejoin="round" />
-                                <circle cx="28" cy="28" r="2" fill="currentColor" />
-                            </svg>
-                        </div>
-                        <h3 class="service-title-buildex">Renovation and<br>Repurpose</h3>
-                        <p class="service-desc-buildex">Construction is a general term meaning the art and science form
-                            objects.</p>
-                        <a href="services.html" class="service-link-buildex">Read More</a>
-                    </div>
-                </div>
+                <button class="carousel-arrow carousel-arrow-right" onclick="scrollServicesRight()"
+                    aria-label="Next services">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
+
+    <style>
+        /* Services Carousel Wrapper */
+        .services-carousel-wrapper {
+            position: relative;
+            padding: 0 50px;
+        }
+
+        /* Services Grid as Horizontal Scroll Container */
+        .services-grid {
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            padding: 10px 0;
+        }
+
+        .services-grid::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Opera */
+        }
+
+        /* Service Card - Fixed Width for Carousel */
+        .service-card-buildex {
+            flex: 0 0 calc(25% - 22.5px);
+            /* Show 4 cards initially */
+            min-width: 280px;
+            max-width: 320px;
+        }
+
+        /* Carousel Navigation Arrows */
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--buildex-primary-color);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 168, 38, 0.3);
+        }
+
+        .carousel-arrow:hover {
+            background: var(--buildex-dark);
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 6px 20px rgba(26, 29, 46, 0.4);
+        }
+
+        .carousel-arrow svg {
+            width: 24px;
+            height: 24px;
+            color: white;
+        }
+
+        .carousel-arrow-left {
+            left: 0;
+        }
+
+        .carousel-arrow-right {
+            right: 0;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1400px) {
+            .service-card-buildex {
+                flex: 0 0 calc(33.333% - 20px);
+                /* Show 3 cards on medium screens */
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .service-card-buildex {
+                flex: 0 0 calc(50% - 15px);
+                /* Show 2 cards on tablets */
+            }
+
+            .services-carousel-wrapper {
+                padding: 0 40px;
+            }
+
+            .carousel-arrow {
+                width: 40px;
+                height: 40px;
+            }
+
+            .carousel-arrow svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-card-buildex {
+                flex: 0 0 calc(100% - 10px);
+                /* Show 1 card on mobile */
+                min-width: 250px;
+            }
+
+            .services-carousel-wrapper {
+                padding: 0 35px;
+            }
+
+            .carousel-arrow {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
 
     <!-- CTA Strip Section -->
     <section class="cta-strip-buildex">
@@ -1188,6 +1235,9 @@
             startProjectsAutoScroll();
         }
     </script>
+
+    <!-- Services Carousel Script -->
+    <script type="module" src="/src/scripts/home-services.js"></script>
 
     <!-- Navigation JavaScript -->
     <script type="module" src="/src/scripts/navigation.js"></script>
