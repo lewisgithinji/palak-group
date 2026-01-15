@@ -343,3 +343,6 @@ function getProjectsByCategory(category) {
 function getProjectsByStatus(status) {
     return projectsData.filter(project => project.status.toLowerCase() === status.toLowerCase());
 }
+
+// Export for ES modules
+export { projectsData, filterProjects, getProjectBySlug, getProjectsByCategory, getProjectsByStatus };

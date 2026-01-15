@@ -1,3 +1,6 @@
+// Import project data
+import { projectsData } from '../data/projects.js';
+
 // Projects Page JavaScript
 document.addEventListener('DOMContentLoaded', function () {
     // Load project data
