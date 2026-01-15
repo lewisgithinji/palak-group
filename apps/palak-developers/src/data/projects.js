@@ -23,10 +23,10 @@ const projectsData = [
         ],
         amenities: ["Basement Parking (2 Levels)", "Security & CCTV", "Elevator", "Backup Generator"],
         images: [
-            "./images/projects/jalaram-pride/1.jpg",
-            "./images/projects/jalaram-pride/2.jpg",
-            "./images/projects/jalaram-pride/3.jpg",
-            "./images/projects/jalaram-pride/4.jpg"
+            "/images/projects/jalaram-pride/1.jpg",
+            "/images/projects/jalaram-pride/2.jpg",
+            "/images/projects/jalaram-pride/3.jpg",
+            "/images/projects/jalaram-pride/4.jpg"
         ],
         specs: {
             "Total Units": "41 Apartments",
@@ -57,9 +57,9 @@ const projectsData = [
         ],
         amenities: ["Basement Parking", "24/7 Security", "CCTV Surveillance", "Elevator", "Backup Power"],
         images: [
-            "./images/projects/poonam-apartments/1.jpg",
-            "./images/projects/poonam-apartments/2.jpg",
-            "./images/projects/poonam-apartments/3.jpg"
+            "/images/projects/poonam-apartments/1.jpg",
+            "/images/projects/poonam-apartments/2.jpg",
+            "/images/projects/poonam-apartments/3.jpg"
         ],
         specs: {
             "Total Units": "18 Apartments",
@@ -91,10 +91,10 @@ const projectsData = [
         ],
         amenities: ["Basement Parking (3 Levels)", "Fully Equipped Gym", "Party Hall", "Swimming Pool", "24/7 Security", "High-Speed Elevators"],
         images: [
-            "./images/projects/riya-residency/1.jpg",
-            "./images/projects/riya-residency/2.jpg",
-            "./images/projects/riya-residency/3.jpg",
-            "./images/projects/riya-residency/4.jpg"
+            "/images/projects/riya-residency/1.jpg",
+            "/images/projects/riya-residency/2.jpg",
+            "/images/projects/riya-residency/3.jpg",
+            "/images/projects/riya-residency/4.jpg"
         ],
         specs: {
             "Total Units": "64 (60 Apartments + 4 Penthouses)",
@@ -128,9 +128,9 @@ const projectsData = [
         ],
         amenities: ["Office Block", "Staff Quarters", "Security Systems", "Industrial Infrastructure", "Warehousing"],
         images: [
-            "./images/projects/steel-mill-factory/1.jpg",
-            "./images/projects/steel-mill-factory/2.jpg",
-            "./images/projects/steel-mill-factory/3.jpg"
+            "/images/projects/steel-mill-factory/1.jpg",
+            "/images/projects/steel-mill-factory/2.jpg",
+            "/images/projects/steel-mill-factory/3.jpg"
         ],
         specs: {
             "Land Area": "7 Acres",
@@ -163,9 +163,9 @@ const projectsData = [
         ],
         amenities: ["Staff Recreational Area", "Secure Parking", "Conference Rooms", "Modern IT Infrastructure", "Kitchenette"],
         images: [
-            "./images/projects/steel-mill-office/1.jpg",
-            "./images/projects/steel-mill-office/2.jpg",
-            "./images/projects/steel-mill-office/3.jpg"
+            "/images/projects/steel-mill-office/1.jpg",
+            "/images/projects/steel-mill-office/2.jpg",
+            "/images/projects/steel-mill-office/3.jpg"
         ],
         specs: {
             "Project Type": "Commercial Office",
@@ -202,8 +202,8 @@ const projectsData = [
         ],
         amenities: ["Modern Elevator", "Private Gym", "Rooftop Terrace", "Gazebo with Bar", "2 DSQ", "Biodigester", "Landscaping"],
         images: [
-            "./images/projects/runda-bungalow/1.jpg",
-            "./images/projects/runda-bungalow/2.jpg"
+            "/images/projects/runda-bungalow/1.jpg",
+            "/images/projects/runda-bungalow/2.jpg"
         ],
         specs: {
             "Bedrooms": "5",
@@ -237,8 +237,8 @@ const projectsData = [
         ],
         amenities: ["Advanced Technology", "Safety Systems", "Environmental Controls", "Training Facilities"],
         images: [
-            "./images/projects/furnace-installation/1.jpg",
-            "./images/projects/furnace-installation/2.jpg"
+            "/images/projects/furnace-installation/1.jpg",
+            "/images/projects/furnace-installation/2.jpg"
         ],
         specs: {
             "Project Type": "Industrial Infrastructure",
@@ -269,9 +269,9 @@ const projectsData = [
         ],
         amenities: ["Smart City Infrastructure", "Green Building", "Modern Design", "Landscaping"],
         images: [
-            'images/projects/tatu-city-bungalow/exterior-01.jpg',
-            'images/projects/tatu-city-bungalow/livingroom-01.jpg',
-            'images/projects/tatu-city-bungalow/bedroom-01.jpg'
+            '/images/projects/tatu-city-bungalow/exterior-01.jpg',
+            '/images/projects/tatu-city-bungalow/livingroom-01.jpg',
+            '/images/projects/tatu-city-bungalow/bedroom-01.jpg'
         ],
         specs: {
             "Project Type": "Residential Bungalow",
@@ -318,7 +318,7 @@ const projectsData = [
             "Units": "Multiple luxury apartments"
         },
         images: [
-            'images/projects/wild-residence/exterior-01.png'
+            '/images/projects/wild-residence/exterior-01.png'
         ]
     }
 ];
