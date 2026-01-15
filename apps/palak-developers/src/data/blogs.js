@@ -22,7 +22,7 @@ const blogsData = [
         date: "January 5, 2026",
         image: "/images/project-3.png",
         featured: false,
-        link: "#"
+        link: "blog/green-building-certifications-rise.html"
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ const blogsData = [
         date: "January 3, 2026",
         image: "/images/project-4.png",
         featured: false,
-        link: "#"
+        link: "blog/westlands-real-estate-demand.html"
     },
     {
         id: 4,
@@ -46,7 +46,7 @@ const blogsData = [
         date: "December 28, 2025",
         image: "/images/project-5.png",
         featured: false,
-        link: "#"
+        link: "blog/construction-tech-kenya.html"
     },
     {
         id: 5,
@@ -58,7 +58,7 @@ const blogsData = [
         date: "December 20, 2025",
         image: "/images/project-6.png",
         featured: false,
-        link: "#"
+        link: "blog/affordable-housing-targets.html"
     },
     {
         id: 6,
@@ -70,7 +70,7 @@ const blogsData = [
         date: "December 15, 2025",
         image: "/images/project-7.png",
         featured: false,
-        link: "#"
+        link: "blog/quality-control-practices.html"
     },
     {
         id: 7,
@@ -82,7 +82,7 @@ const blogsData = [
         date: "December 10, 2025",
         image: "/images/project-8.png",
         featured: false,
-        link: "#"
+        link: "blog/sustainable-materials-kenya.html"
     },
     {
         id: 8,
@@ -94,7 +94,7 @@ const blogsData = [
         date: "December 5, 2025",
         image: "/images/project-1.png",
         featured: false,
-        link: "#"
+        link: "blog/property-prices-stabilize.html"
     },
     {
         id: 9,
@@ -106,7 +106,7 @@ const blogsData = [
         date: "November 28, 2025",
         image: "/images/project-2.png",
         featured: false,
-        link: "#"
+        link: "blog/safety-protocols-highrise.html"
     }
 ];
 
