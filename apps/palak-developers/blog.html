@@ -127,7 +127,26 @@
         <div class="container" style="max-width: 1320px; margin: 0 auto; padding: 0 15px;">
 
             <!-- Two Column Layout -->
-            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 50px;">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 50px;" class="blog-layout">
+
+                <style>
+                    /* Blog Responsive Layout */
+                    @media (max-width: 1024px) {
+                        .blog-layout {
+                            grid-template-columns: 1fr !important;
+                        }
+
+                        #blog-posts-grid {
+                            grid-template-columns: repeat(2, 1fr) !important;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        #blog-posts-grid {
+                            grid-template-columns: 1fr !important;
+                        }
+                    }
+                </style>
 
                 <!-- Main Content Column -->
                 <div class="blog-main-content">
@@ -164,7 +183,7 @@
                     </div>
 
                     <!-- Blog Posts Grid (2 columns) -->
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                    <div id="blog-posts-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
 
                         <!-- Post 1 -->
                         <div class="blog-card"
@@ -290,42 +309,42 @@
                             Categories</h3>
                         <ul style="list-style: none; padding: 0; margin: 0;">
                             <li style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0;">
-                                <a href="#"
+                                <a href="#" data-category="Industry News"
                                     style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: var(--buildex-grey-color); transition: color 0.3s;">
                                     <span style="font-size: 15px;">Industry News</span>
-                                    <span
+                                    <span class="category-count"
                                         style="color: var(--buildex-primary-color); font-size: 13px; font-weight: 600;">(12)</span>
                                 </a>
                             </li>
                             <li style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0;">
-                                <a href="#"
+                                <a href="#" data-category="Sustainability"
                                     style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: var(--buildex-grey-color); transition: color 0.3s;">
                                     <span style="font-size: 15px;">Sustainability</span>
-                                    <span
+                                    <span class="category-count"
                                         style="color: var(--buildex-primary-color); font-size: 13px; font-weight: 600;">(8)</span>
                                 </a>
                             </li>
                             <li style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0;">
-                                <a href="#"
+                                <a href="#" data-category="Market Trends"
                                     style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: var(--buildex-grey-color); transition: color 0.3s;">
                                     <span style="font-size: 15px;">Market Trends</span>
-                                    <span
+                                    <span class="category-count"
                                         style="color: var(--buildex-primary-color); font-size: 13px; font-weight: 600;">(15)</span>
                                 </a>
                             </li>
                             <li style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0;">
-                                <a href="#"
+                                <a href="#" data-category="Technology"
                                     style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: var(--buildex-grey-color); transition: color 0.3s;">
                                     <span style="font-size: 15px;">Technology</span>
-                                    <span
+                                    <span class="category-count"
                                         style="color: var(--buildex-primary-color); font-size: 13px; font-weight: 600;">(6)</span>
                                 </a>
                             </li>
                             <li style="margin-bottom: 0;">
-                                <a href="#"
+                                <a href="#" data-category="Best Practices"
                                     style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: var(--buildex-grey-color); transition: color 0.3s;">
                                     <span style="font-size: 15px;">Best Practices</span>
-                                    <span
+                                    <span class="category-count"
                                         style="color: var(--buildex-primary-color); font-size: 13px; font-weight: 600;">(9)</span>
                                 </a>
                             </li>
@@ -338,7 +357,7 @@
                         <h3
                             style="font-family: var(--buildex-primary-font); font-size: 22px; font-weight: 700; color: var(--buildex-dark); margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid var(--buildex-primary-color);">
                             Recent Stories</h3>
-                        <div style="display: flex; flex-direction: column; gap: 18px;">
+                        <div id="recent-stories-list" style="display: flex; flex-direction: column; gap: 18px;">
 
                             <div style="display: flex; gap: 15px;">
                                 <div
@@ -1067,6 +1086,9 @@
 
     <!-- Navigation JavaScript -->
     <script type="module" src="/src/scripts/navigation.js"></script>
+
+    <!-- Blog Filtering Script -->
+    <script type="module" src="/src/scripts/blog.js"></script>
 
     <script>
         // Sticky Header Behavior
