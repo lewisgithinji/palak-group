@@ -52,9 +52,9 @@
                             </ul>
                             <div class="top-right">
                                 <ul class="top-header-nav">
-                                    <li><a href="#">Help</a></li>
-                                    <li><a href="#">Support</a></li>
-                                    <li><a href="#">Faqs</a></li>
+                                    <li><a href="contact.html">Help</a></li>
+                                    <li><a href="contact.html">Support</a></li>
+                                    <li><a href="faq.html">Faqs</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -544,18 +544,6 @@
     <!-- Navigation Script -->
     <script type="module" src="/src/scripts/navigation.js"></script>
     <script>
-        const navigationWrapper = document.querySelector('.navigation-wrapper');
-        const topHeader = document.querySelector('.top-header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                navigationWrapper.classList.add('sticky');
-                topHeader.style.display = 'none';
-            } else {
-                navigationWrapper.classList.remove('sticky');
-                topHeader.style.display = '';
-            }
-        });
-    </script>
 </body>
 
 </html>

@@ -734,19 +734,6 @@
     <!-- Related Articles Script -->
     <script type="module" src="../src/scripts/related-articles.js"></script>
     <script>
-        const navigationWrapper = document.querySelector('.navigation-wrapper');
-        const topHeader = document.querySelector('.top-header');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                navigationWrapper.classList.add('sticky');
-                topHeader.style.display = 'none';
-            } else {
-                navigationWrapper.classList.remove('sticky');
-                topHeader.style.display = '';
-            }
-        });
-    </script>
 </body>
 
 </html>

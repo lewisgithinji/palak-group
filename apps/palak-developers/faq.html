@@ -177,8 +177,8 @@
                             </ul>
                             <div class="top-right">
                                 <ul class="top-header-nav">
-                                    <li><a href="#">Help</a></li>
-                                    <li><a href="#">Support</a></li>
+                                    <li><a href="contact.html">Help</a></li>
+                                    <li><a href="contact.html">Support</a></li>
                                     <li><a href="faq.html" class="active">Faqs</a></li>
                                 </ul>
                             </div>
@@ -815,35 +815,6 @@
 
     <script>
         // Sticky Header Behavior
-        const navigationWrapper = document.querySelector('.navigation-wrapper');
-        const topHeader = document.querySelector('.top-header');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                navigationWrapper.classList.add('sticky');
-                topHeader.style.display = 'none';
-            } else {
-                navigationWrapper.classList.remove('sticky');
-                topHeader.style.display = '';
-            }
-        });
-
-        // FAQ Accordion Functionality
-        function toggleFAQ(element) {
-            const faqItem = element.closest('.faq-item');
-            const isActive = faqItem.classList.contains('active');
-
-            // Close all FAQs
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('active');
-            });
-
-            // Open clicked FAQ if it wasn't already active
-            if (!isActive) {
-                faqItem.classList.add('active');
-            }
-        }
-    </script>
 </body>
 
 </html>
