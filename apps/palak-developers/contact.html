@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./src/styles/buildex.css">
     <link rel="stylesheet" href="./src/styles/enhancements.css">
     <link rel="stylesheet" href="./src/styles/mobile-menu.css">
+    <link rel="stylesheet" href="./src/styles/form-validation.css">
 </head>
 
 <body>
@@ -65,7 +66,6 @@
                                     <li class="menu-item has-dropdown"><a href="about.html">Company</a>
                                         <ul class="sub-menu">
                                             <li><a href="about.html">About Us</a></li>
-                                            <li><a href="team.html">Our Team</a></li>
                                             <li><a href="faq.html">FAQ</a></li>
                                         </ul>
                                     </li>
@@ -76,11 +76,6 @@
                                 </ul>
                             </nav>
                             <div class="header-right">
-                                <div class="dl-search-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                    </svg></div>
                                 <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
                                     <span></span><span></span><span></span>
                                 </div>
@@ -136,14 +131,16 @@
                                 <label
                                     style="display: block; font-weight: 500; color: var(--buildex-dark); margin-bottom: 8px;">Full
                                     Name *</label>
-                                <input type="text" name="name" required
+                                <input type="text" name="name" required aria-required="true" minlength="2"
+                                    placeholder="Your full name" autocomplete="name"
                                     style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 5px; font-family: var(--buildex-body-font); color: var(--buildex-grey-color);">
                             </div>
                             <div>
                                 <label
                                     style="display: block; font-weight: 500; color: var(--buildex-dark); margin-bottom: 8px;">Phone
                                     Number</label>
-                                <input type="tel" name="phone"
+                                <input type="tel" name="phone" pattern="[\+]?[0-9]{10,13}" inputmode="tel"
+                                    placeholder="+254..." autocomplete="tel"
                                     style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 5px; font-family: var(--buildex-body-font); color: var(--buildex-grey-color);">
                             </div>
                         </div>
@@ -152,7 +149,8 @@
                             <label
                                 style="display: block; font-weight: 500; color: var(--buildex-dark); margin-bottom: 8px;">Email
                                 Address *</label>
-                            <input type="email" name="email" required
+                            <input type="email" name="email" required aria-required="true"
+                                placeholder="your.email@example.com" autocomplete="email"
                                 style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 5px; font-family: var(--buildex-body-font); color: var(--buildex-grey-color);">
                         </div>
 
@@ -170,13 +168,23 @@
                             </select>
                         </div>
 
-                        <div style="margin-bottom: 25px;">
+                        <div style="margin-bottom: 20px;">
                             <label
                                 style="display: block; font-weight: 500; color: var(--buildex-dark); margin-bottom: 8px;">Message
                                 *</label>
-                            <textarea name="message" rows="5" required
+                            <textarea name="message" rows="5" required minlength="10" aria-required="true"
+                                placeholder="Tell us about your property inquiry..." autocomplete="off"
                                 style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 5px; font-family: var(--buildex-body-font); color: var(--buildex-grey-color); resize: vertical;"></textarea>
                         </div>
+
+                        <div class="privacy-group">
+                            <input type="checkbox" id="privacy-contact" name="privacy" required aria-required="true">
+                            <label for="privacy-contact">
+                                I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a>
+                            </label>
+                        </div>
+
+                        <div class="form-status"></div>
 
                         <button type="submit" class="default-btn" style="width: 100%;">Send Message</button>
                     </form>
@@ -553,6 +561,7 @@
     </footer>
 
     <script type="module" src="/src/scripts/navigation.js"></script>
+    <script type="module" src="/src/scripts/form-handler.js"></script>
     </body>
 
 </html>

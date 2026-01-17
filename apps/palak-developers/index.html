@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./src/styles/hero-animations.css">
     <link rel="stylesheet" href="./src/styles/enhancements.css">
     <link rel="stylesheet" href="./src/styles/mobile-menu.css">
+    <link rel="stylesheet" href="./src/styles/form-validation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
@@ -104,7 +105,6 @@
                                         <a href="about.html">Company</a>
                                         <ul class="sub-menu">
                                             <li><a href="about.html">About Us</a></li>
-                                            <li><a href="team.html">Our Team</a></li>
                                             <li><a href="faq.html">FAQ</a></li>
                                         </ul>
                                     </li>
@@ -115,13 +115,6 @@
                                 </ul>
                             </nav>
                             <div class="header-right">
-                                <div class="dl-search-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                    </svg>
-                                </div>
                                 <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
                                     <span></span><span></span><span></span>
                                 </div>
@@ -656,22 +649,41 @@
                 <h2 class="contact-heading-buildex">
                     Building with passion precision and <span class="highlight-yellow-underline">pride!</span>
                 </h2>
-                <form class="contact-form-buildex" action="#" method="POST">
+                <form class="contact-form-buildex" method="POST">
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Name" required>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Full Name"
+                                required
+                                aria-required="true"
+                                minlength="2"
+                                autocomplete="name">
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="Email" required>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email Address"
+                                required
+                                aria-required="true"
+                                autocomplete="email">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="tel" name="phone" placeholder="Phone">
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Phone Number (+254...)"
+                                pattern="[\+]?[0-9]{10,13}"
+                                inputmode="tel"
+                                autocomplete="tel">
                         </div>
                         <div class="form-group">
-                            <select name="industry" required>
+                            <select name="industry" required aria-required="true">
                                 <option value="">Select Industry</option>
                                 <option value="residential">Residential Construction</option>
                                 <option value="commercial">Commercial Development</option>
@@ -683,7 +695,24 @@
                     </div>
 
                     <div class="form-group">
-                        <textarea name="message" placeholder="Message" rows="5"></textarea>
+                        <textarea
+                            name="message"
+                            placeholder="Your Message"
+                            rows="5"
+                            minlength="10"
+                            autocomplete="off"></textarea>
+                    </div>
+
+                    <div class="privacy-group">
+                        <input
+                            type="checkbox"
+                            id="privacy-home"
+                            name="privacy"
+                            required
+                            aria-required="true">
+                        <label for="privacy-home">
+                            I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a> and consent to being contacted about my inquiry.
+                        </label>
                     </div>
 
                     <button type="submit" class="contact-submit-btn">Send Message</button>
@@ -1135,6 +1164,9 @@
 
     <!-- Navigation JavaScript -->
     <script type="module" src="/src/scripts/navigation.js"></script>
+
+    <!-- Form Handler with Validation -->
+    <script type="module" src="/src/scripts/form-handler.js"></script>
 </body>
 
 </html>
