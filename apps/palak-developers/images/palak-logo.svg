@@ -1,20 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
-  <!-- Building Icon -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" fill="none">
+  <!-- Building Icon - styled like original -->
   <g id="building-icon">
-    <rect x="10" y="15" width="4" height="50" fill="white"/>
-    <rect x="16" y="20" width="4" height="45" fill="white"/>
-    <rect x="22" y="25" width="4" height="40" fill="white"/>
-    <rect x="28" y="18" width="4" height="47" fill="white"/>
-    <rect x="34" y="22" width="4" height="43" fill="white"/>
-    <rect x="40" y="28" width="4" height="37" fill="white"/>
-    <rect x="46" y="24" width="4" height="41" fill="white"/>
-    <!-- Base -->
-    <rect x="10" y="66" width="40" height="3" fill="white"/>
+    <!-- Vertical lines forming building -->
+    <rect x="8" y="15" width="3" height="60" fill="white" opacity="0.9"/>
+    <rect x="13" y="18" width="3" height="57" fill="white" opacity="0.95"/>
+    <rect x="18" y="12" width="3" height="63" fill="white"/>
+    <rect x="23" y="20" width="3" height="55" fill="white" opacity="0.9"/>
+    <rect x="28" y="16" width="3" height="59" fill="white" opacity="0.95"/>
+    <rect x="33" y="22" width="3" height="53" fill="white" opacity="0.9"/>
+    <rect x="38" y="14" width="3" height="61" fill="white"/>
+    <rect x="43" y="19" width="3" height="56" fill="white" opacity="0.95"/>
+    <rect x="48" y="25" width="3" height="50" fill="white" opacity="0.9"/>
+    <rect x="53" y="17" width="3" height="58" fill="white" opacity="0.95"/>
+    <rect x="58" y="21" width="3" height="54" fill="white" opacity="0.9"/>
+    
+    <!-- Base line -->
+    <rect x="8" y="76" width="56" height="2" fill="white"/>
   </g>
   
+  <!-- Horizontal decorative lines -->
+  <line x1="5" y1="50" x2="80" y2="50" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  
   <!-- Text: PALAK -->
-  <text x="70" y="42" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="white" letter-spacing="2">PALAK</text>
+  <text x="95" y="50" font-family="'Arial Black', Arial, sans-serif" font-size="42" font-weight="900" fill="white" letter-spacing="3">PALAK</text>
   
   <!-- Text: DEVELOPERS -->
-  <text x="70" y="70" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="white" letter-spacing="1">DEVELOPERS</text>
+  <text x="95" y="80" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="white" letter-spacing="2">DEVELOPERS</text>
+  
+  <!-- Bottom decorative line -->
+  <line x1="90" y1="85" x2="410" y2="85" stroke="white" stroke-width="1.5" opacity="0.3"/>
 </svg>
