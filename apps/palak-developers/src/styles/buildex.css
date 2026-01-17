@@ -257,9 +257,18 @@ ul {
     display: block;
 }
 
-.site-logo img {
+.site-logo img,
+.site-logo .logo-img {
     height: 50px;
     width: auto;
+    max-width: 100%;
+}
+
+.logo-img-footer {
+    height: 60px;
+    width: auto;
+    max-width: 200px;
+    margin-bottom: 20px;
 }
 
 /* Main Header Items - Orange Top + White Bottom */
