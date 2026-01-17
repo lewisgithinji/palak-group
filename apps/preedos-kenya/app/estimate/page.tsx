@@ -1065,4 +1065,5 @@ export default function EstimatePage() {
             </main>
             <Footer />
         </>
+    )
 }
