@@ -182,9 +182,9 @@ export default function EstimatePage() {
             localStorage.setItem('preedos-estimate-config', JSON.stringify(dataToSave))
         }
     }, [formData.productType, formData.floors, formData.capacity, formData.elevatorSpeed,
-        formData.escalatorLength, formData.escalatorWidth, formData.escalatorSpeed,
-        formData.walkLength, formData.walkWidth, formData.inclination,
-        formData.selectedFeatures, estimatedPrice])
+    formData.escalatorLength, formData.escalatorWidth, formData.escalatorSpeed,
+    formData.walkLength, formData.walkWidth, formData.inclination,
+    formData.selectedFeatures, estimatedPrice])
 
     const calculateEstimate = () => {
         let total = 0
@@ -420,7 +420,7 @@ export default function EstimatePage() {
                                         Previous configuration loaded
                                     </p>
                                     <p className="text-sm text-blue-700">
-                                        We've restored your last estimate to save you time.
+                                        We&apos;ve restored your last estimate to save you time.
                                     </p>
                                 </div>
                             </div>
@@ -878,140 +878,140 @@ export default function EstimatePage() {
                                             </div>
                                         </div>
                                     ) : (
-                                    <form onSubmit={handleSubmit} className="space-y-6">
-                                        <div className="grid md:grid-cols-2 gap-4">
-                                            <div>
-                                                <label className="block text-sm font-medium text-secondary-700 mb-2">
-                                                    Full Name *
-                                                </label>
-                                                <div className="relative">
-                                                    <User className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-secondary-400" />
-                                                    <input
-                                                        type="text"
-                                                        value={formData.name}
-                                                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                                        className="w-full pl-10 pr-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
-                                                        placeholder="Your name"
-                                                    />
+                                        <form onSubmit={handleSubmit} className="space-y-6">
+                                            <div className="grid md:grid-cols-2 gap-4">
+                                                <div>
+                                                    <label className="block text-sm font-medium text-secondary-700 mb-2">
+                                                        Full Name *
+                                                    </label>
+                                                    <div className="relative">
+                                                        <User className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-secondary-400" />
+                                                        <input
+                                                            type="text"
+                                                            value={formData.name}
+                                                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                                                            className="w-full pl-10 pr-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+                                                            placeholder="Your name"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label className="block text-sm font-medium text-secondary-700 mb-2">
+                                                        Company
+                                                    </label>
+                                                    <div className="relative">
+                                                        <Briefcase className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-secondary-400" />
+                                                        <input
+                                                            type="text"
+                                                            value={formData.company}
+                                                            onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                                                            className="w-full pl-10 pr-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+                                                            placeholder="Company name"
+                                                        />
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <label className="block text-sm font-medium text-secondary-700 mb-2">
-                                                    Company
-                                                </label>
-                                                <div className="relative">
-                                                    <Briefcase className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-secondary-400" />
-                                                    <input
-                                                        type="text"
-                                                        value={formData.company}
-                                                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                                                        className="w-full pl-10 pr-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
-                                                        placeholder="Company name"
-                                                    />
+
+                                            <div className="grid md:grid-cols-2 gap-4">
+                                                <div>
+                                                    <label className="block text-sm font-medium text-secondary-700 mb-2">
+                                                        Email *
+                                                    </label>
+                                                    <div className="relative">
+                                                        <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-secondary-400" />
+                                                        <input
+                                                            type="email"
+                                                            value={formData.email}
+                                                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                                            className="w-full pl-10 pr-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+                                                            placeholder="you@company.com"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label className="block text-sm font-medium text-secondary-700 mb-2">
+                                                        Phone *
+                                                    </label>
+                                                    <div className="relative">
+                                                        <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-secondary-400" />
+                                                        <input
+                                                            type="tel"
+                                                            value={formData.phone}
+                                                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                                                            className="w-full pl-10 pr-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+                                                            placeholder="+254 791 240 000"
+                                                        />
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div className="grid md:grid-cols-2 gap-4">
                                             <div>
                                                 <label className="block text-sm font-medium text-secondary-700 mb-2">
-                                                    Email *
+                                                    Project Timeline
                                                 </label>
-                                                <div className="relative">
-                                                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-secondary-400" />
-                                                    <input
-                                                        type="email"
-                                                        value={formData.email}
-                                                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                                        className="w-full pl-10 pr-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
-                                                        placeholder="you@company.com"
-                                                    />
+                                                <div className="grid grid-cols-4 gap-2">
+                                                    {[
+                                                        { value: 'urgent', label: 'Urgent' },
+                                                        { value: '3-months', label: '3 months' },
+                                                        { value: '6-months', label: '6 months' },
+                                                        { value: 'flexible', label: 'Flexible' },
+                                                    ].map((option) => (
+                                                        <button
+                                                            key={option.value}
+                                                            type="button"
+                                                            onClick={() => setFormData({ ...formData, timeline: option.value })}
+                                                            className={cn(
+                                                                'p-3 rounded-lg border text-center text-sm transition-all',
+                                                                formData.timeline === option.value
+                                                                    ? 'border-primary-600 bg-primary-50 text-primary-700'
+                                                                    : 'border-secondary-200 bg-white hover:border-secondary-300'
+                                                            )}
+                                                        >
+                                                            {option.label}
+                                                        </button>
+                                                    ))}
                                                 </div>
                                             </div>
+
                                             <div>
                                                 <label className="block text-sm font-medium text-secondary-700 mb-2">
-                                                    Phone *
+                                                    Additional Details
                                                 </label>
-                                                <div className="relative">
-                                                    <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-secondary-400" />
-                                                    <input
-                                                        type="tel"
-                                                        value={formData.phone}
-                                                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                                                        className="w-full pl-10 pr-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
-                                                        placeholder="+254 791 240 000"
-                                                    />
+                                                <textarea
+                                                    value={formData.projectDetails}
+                                                    onChange={(e) => setFormData({ ...formData, projectDetails: e.target.value })}
+                                                    rows={4}
+                                                    className="w-full px-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+                                                    placeholder="Tell us more about your project requirements, building type, or any specific needs..."
+                                                />
+                                            </div>
+
+                                            {submissionState === 'error' && (
+                                                <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
+                                                    <p>Something went wrong. Please try again or contact us directly.</p>
                                                 </div>
+                                            )}
+
+                                            <div className="flex gap-4">
+                                                <Button
+                                                    type="button"
+                                                    variant="outline"
+                                                    onClick={handleBack}
+                                                    leftIcon={<ArrowLeft className="h-5 w-5" />}
+                                                    disabled={submissionState === 'submitting'}
+                                                >
+                                                    Back
+                                                </Button>
+                                                <Button
+                                                    type="submit"
+                                                    className="flex-1"
+                                                    rightIcon={submissionState === 'submitting' ? undefined : <Send className="h-5 w-5" />}
+                                                    disabled={submissionState === 'submitting'}
+                                                >
+                                                    {submissionState === 'submitting' ? 'Sending...' : 'Submit Request'}
+                                                </Button>
                                             </div>
-                                        </div>
-
-                                        <div>
-                                            <label className="block text-sm font-medium text-secondary-700 mb-2">
-                                                Project Timeline
-                                            </label>
-                                            <div className="grid grid-cols-4 gap-2">
-                                                {[
-                                                    { value: 'urgent', label: 'Urgent' },
-                                                    { value: '3-months', label: '3 months' },
-                                                    { value: '6-months', label: '6 months' },
-                                                    { value: 'flexible', label: 'Flexible' },
-                                                ].map((option) => (
-                                                    <button
-                                                        key={option.value}
-                                                        type="button"
-                                                        onClick={() => setFormData({ ...formData, timeline: option.value })}
-                                                        className={cn(
-                                                            'p-3 rounded-lg border text-center text-sm transition-all',
-                                                            formData.timeline === option.value
-                                                                ? 'border-primary-600 bg-primary-50 text-primary-700'
-                                                                : 'border-secondary-200 bg-white hover:border-secondary-300'
-                                                        )}
-                                                    >
-                                                        {option.label}
-                                                    </button>
-                                                ))}
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <label className="block text-sm font-medium text-secondary-700 mb-2">
-                                                Additional Details
-                                            </label>
-                                            <textarea
-                                                value={formData.projectDetails}
-                                                onChange={(e) => setFormData({ ...formData, projectDetails: e.target.value })}
-                                                rows={4}
-                                                className="w-full px-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
-                                                placeholder="Tell us more about your project requirements, building type, or any specific needs..."
-                                            />
-                                        </div>
-
-                                        {submissionState === 'error' && (
-                                            <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
-                                                <p>Something went wrong. Please try again or contact us directly.</p>
-                                            </div>
-                                        )}
-
-                                        <div className="flex gap-4">
-                                            <Button
-                                                type="button"
-                                                variant="outline"
-                                                onClick={handleBack}
-                                                leftIcon={<ArrowLeft className="h-5 w-5" />}
-                                                disabled={submissionState === 'submitting'}
-                                            >
-                                                Back
-                                            </Button>
-                                            <Button
-                                                type="submit"
-                                                className="flex-1"
-                                                rightIcon={submissionState === 'submitting' ? undefined : <Send className="h-5 w-5" />}
-                                                disabled={submissionState === 'submitting'}
-                                            >
-                                                {submissionState === 'submitting' ? 'Sending...' : 'Submit Request'}
-                                            </Button>
-                                        </div>
-                                    </form>
+                                        </form>
                                     )}
                                 </div>
 

@@ -1,7 +1,9 @@
 {
-  "/products/page": "app/products/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/services/page": "app/services/page.js",
   "/contact/page": "app/contact/page.js",
   "/privacy/page": "app/privacy/page.js",
-  "/terms/page": "app/terms/page.js"
+  "/terms/page": "app/terms/page.js",
+  "/estimate/page": "app/estimate/page.js",
+  "/page": "app/page.js"
 }

@@ -21,8 +21,8 @@ Use these EXACT settings:
 
 ```
 Production branch: main
-Build command: cd apps/preedos-kenya-next && pnpm install && pnpm build
-Build output directory: apps/preedos-kenya-next/out
+Build command: cd apps/preedos-kenya && pnpm install && pnpm build
+Build output directory: apps/preedos-kenya/out
 Root directory: (leave empty or set to /)
 ```
 
@@ -62,7 +62,7 @@ After deployment:
 ```
 
 ### Build Output
-- Static HTML files in `apps/preedos-kenya-next/out/`
+- Static HTML files in `apps/preedos-kenya/out/`
 - All images optimized and included
 - CSS and JavaScript bundled
 
