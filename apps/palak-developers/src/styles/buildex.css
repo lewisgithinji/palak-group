@@ -259,16 +259,15 @@ ul {
 
 .site-logo img,
 .site-logo .logo-img {
-    height: 70px;
+    height: 90px;
     width: auto;
     max-width: 100%;
-    filter: brightness(0) invert(1);
 }
 
 .logo-img-footer {
-    height: 80px;
+    height: 100px;
     width: auto;
-    max-width: 250px;
+    max-width: 280px;
     margin-bottom: 20px;
 }
 
