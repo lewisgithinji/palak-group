@@ -259,15 +259,26 @@ ul {
 
 .site-logo img,
 .site-logo .logo-img {
-    height: 150px;
+    height: 60px;
     width: auto;
     max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Sticky header styling */
+.site-header.scrolled .site-logo img,
+.site-header.scrolled .site-logo .logo-img {
+    height: 45px;
+}
+
+.site-header.scrolled .site-logo {
+    padding: 20px 50px;
 }
 
 .logo-img-footer {
-    height: 140px;
+    height: 100px;
     width: auto;
-    max-width: 380px;
+    max-width: 350px;
     margin-bottom: 20px;
 }
 
