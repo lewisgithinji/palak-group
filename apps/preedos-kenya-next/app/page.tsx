@@ -6,10 +6,16 @@ import { ServicesGrid } from '@/components/sections/services-grid'
 import { FeaturedProjects } from '@/components/sections/featured-projects'
 import { Partnership } from '@/components/sections/partnership'
 import { CTASection } from '@/components/sections/cta-section'
+import {
+  LocalBusinessSchema,
+  OrganizationSchema,
+} from '@/components/structured-data'
 
 export default function HomePage() {
   return (
     <>
+      <LocalBusinessSchema />
+      <OrganizationSchema />
       <Header />
       <main>
         <Hero />

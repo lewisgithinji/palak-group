@@ -1,6 +1,11 @@
 import type { Metadata } from 'next'
 import { Poppins, Inter } from 'next/font/google'
 import './globals.css'
+import {
+  GoogleAnalytics,
+  GoogleTagManager,
+  GoogleTagManagerNoScript,
+} from '@/components/analytics'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -83,7 +88,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
 }
 
@@ -95,7 +100,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col">
+        <GoogleTagManagerNoScript />
         {children}
+        <GoogleAnalytics />
+        <GoogleTagManager />
       </body>
     </html>
   )
