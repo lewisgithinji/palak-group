@@ -272,7 +272,8 @@ ul {
 }
 
 .site-header.scrolled .site-logo {
-    padding: 15px 50px;
+    width: 260px;
+    padding: 10px 30px;
 }
 
 .logo-img-footer {
