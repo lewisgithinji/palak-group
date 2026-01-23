@@ -302,6 +302,7 @@ const projectsData = [
         ],
         amenities: ["Smart City Infrastructure", "Private Garden", "24/7 Security", "Solar Water Heating", "Ample Parking"],
         images: [
+            "/images/projects/tatu-city-maisonette/primary.png",
             "/images/projects/tatu-city-maisonette/1.png",
             "/images/projects/tatu-city-maisonette/2.png",
             "/images/projects/tatu-city-maisonette/3.png",
