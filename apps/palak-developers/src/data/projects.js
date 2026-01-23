@@ -23,10 +23,11 @@ const projectsData = [
         ],
         amenities: ["Basement Parking (2 Levels)", "Security & CCTV", "Elevator", "Backup Generator"],
         images: [
-            "/images/projects/jalaram-pride/1.jpg",
-            "/images/projects/jalaram-pride/2.jpg",
-            "/images/projects/jalaram-pride/3.jpg",
-            "/images/projects/jalaram-pride/4.jpg"
+            "/images/projects/jalaram-pride/1.png",
+            "/images/projects/jalaram-pride/2.png",
+            "/images/projects/jalaram-pride/3.png",
+            "/images/projects/jalaram-pride/4.png",
+            "/images/projects/jalaram-pride/5.png"
         ],
         specs: {
             "Total Units": "41 Apartments",
