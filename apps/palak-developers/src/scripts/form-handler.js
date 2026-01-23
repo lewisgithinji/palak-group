@@ -3,8 +3,11 @@
  * Handles contact form submissions with validation and Formspree integration
  */
 
-// Formspree endpoint - REPLACE WITH YOUR ACTUAL FORMSPREE ID
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID_HERE';
+// Web3Forms API endpoint
+const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
+
+// Web3Forms Access Key - Configured for info@palakdevelopers.ke
+const WEB3FORMS_ACCESS_KEY = '1259b753-fc98-4640-b095-9ba42ca5dc68';
 
 /**
  * Initialize all forms on the page
@@ -61,16 +64,21 @@ function setupFormSubmission(form) {
       // Prepare form data
       const formData = new FormData(form);
 
-      // Send to Formspree
-      const response = await fetch(FORMSPREE_ENDPOINT, {
+      // Add Web3Forms required fields
+      formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+      formData.append('subject', 'New Contact Form Submission - Palak Developers');
+      formData.append('from_name', 'Palak Developers Website');
+      formData.append('redirect', 'false'); // We handle success ourselves
+
+      // Send to Web3Forms
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
         method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
+        body: formData
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (data.success) {
         // Success
         showStatus(statusDiv, 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.', 'success');
         form.reset();
@@ -84,9 +92,8 @@ function setupFormSubmission(form) {
           });
         }
       } else {
-        // Error from Formspree
-        const data = await response.json();
-        showStatus(statusDiv, data.error || 'Oops! There was a problem submitting your form. Please try again.', 'error');
+        // Error from Web3Forms
+        showStatus(statusDiv, data.message || 'Oops! There was a problem submitting your form. Please try again.', 'error');
       }
     } catch (error) {
       // Network error
@@ -123,18 +130,20 @@ function setupNewsletterSubmission(form) {
 
     try {
       const formData = new FormData();
+      formData.append('access_key', WEB3FORMS_ACCESS_KEY);
       formData.append('email', emailInput.value);
-      formData.append('_subject', 'New Newsletter Subscription');
+      formData.append('subject', 'New Newsletter Subscription - Palak Developers');
+      formData.append('from_name', 'Palak Developers Website');
+      formData.append('redirect', 'false');
 
-      const response = await fetch(FORMSPREE_ENDPOINT, {
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
         method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
+        body: formData
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (data.success) {
         alert('Thank you for subscribing! You\'ll receive our latest updates.');
         form.reset();
       } else {

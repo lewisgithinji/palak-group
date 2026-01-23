@@ -215,7 +215,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 35px 50px;
+    padding: 5px 50px;
     position: relative;
     z-index: 3;
     transition: all 0.3s ease;
@@ -259,7 +259,7 @@ ul {
 
 .site-logo img,
 .site-logo .logo-img {
-    height: 60px;
+    height: 120px;
     width: auto;
     max-width: 100%;
     transition: all 0.3s ease;
@@ -268,11 +268,11 @@ ul {
 /* Sticky header styling */
 .site-header.scrolled .site-logo img,
 .site-header.scrolled .site-logo .logo-img {
-    height: 45px;
+    height: 70px;
 }
 
 .site-header.scrolled .site-logo {
-    padding: 20px 50px;
+    padding: 15px 50px;
 }
 
 .logo-img-footer {
@@ -766,7 +766,7 @@ ul {
     }
 
     .site-logo img {
-        height: 40px;
+        height: 70px;
     }
 
     .mobile-menu-icon {
