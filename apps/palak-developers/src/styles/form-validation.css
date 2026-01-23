@@ -140,6 +140,7 @@ button[type="submit"]:disabled::after {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -188,5 +189,20 @@ textarea::placeholder {
 
     .privacy-group {
         padding: 12px;
+    }
+}
+
+/* hCaptcha Widget Styling */
+.h-captcha {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .h-captcha {
+        margin: 15px 0;
+        transform: scale(0.9);
+        transform-origin: center;
     }
 }

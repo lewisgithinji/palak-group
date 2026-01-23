@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="./src/styles/enhancements.css">
     <link rel="stylesheet" href="./src/styles/mobile-menu.css">
     <link rel="stylesheet" href="./src/styles/form-validation.css">
+
+    <!-- hCaptcha Script -->
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -181,6 +185,9 @@
                         </div>
 
                         <div class="form-status"></div>
+
+                        <!-- hCaptcha Widget -->
+                        <div class="h-captcha" data-captcha="true"></div>
 
                         <button type="submit" class="default-btn" style="width: 100%;">Send Message</button>
                     </form>
@@ -552,7 +559,7 @@
 
     <script type="module" src="/src/scripts/navigation.js"></script>
     <script type="module" src="/src/scripts/form-handler.js"></script>
-        <script src="./src/js/header-scroll.js"></script>
+    <script src="./src/js/header-scroll.js"></script>
 </body>
 
 </html>
