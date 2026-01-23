@@ -271,7 +271,8 @@ ul {
     height: 70px;
 }
 
-.site-header.scrolled .site-logo {
+.site-header.scrolled .site-logo,
+.navigation-wrapper.sticky .site-logo {
     width: 260px;
     padding: 10px 30px;
 }
@@ -950,7 +951,7 @@ ul {
 /* Force logo to shrink on sticky */
 .navigation-wrapper.sticky .site-logo {
     padding: 10px 25px !important;
-    width: auto !important;
+    width: 260px !important;
     min-width: 200px;
 }
 
