@@ -281,6 +281,42 @@ const projectsData = [
         }
     },
     {
+        id: 10,
+        name: "Tatu City Maisonette",
+        slug: "tatu-city-maisonette",
+        category: "Residential",
+        status: "Ongoing",
+        location: "Tatu City, Nairobi",
+        timeline: { start: "October 2024", end: "Present" },
+        shortDesc: "Luxurious 4-bedroom maisonette with modern architectural features.",
+        description: "A sophisticated 4-bedroom maisonette currently under development in the prestigious Tatu City. Featuring contemporary design, expansive living spaces, and premium finishes, this project embodies the future of luxury living in Kenya's fastest-growing smart city.",
+        features: [
+            "4 spacious bedrooms with ensuite bathrooms",
+            "Modern open-plan living and dining areas",
+            "High-end contemporary kitchen design",
+            "Large windows for maximum natural light",
+            "Private garden and outdoor living space",
+            "Smart home automation readiness",
+            "Energy-efficient lighting and water systems",
+            "Premium tile and woodwork finishes"
+        ],
+        amenities: ["Smart City Infrastructure", "Private Garden", "24/7 Security", "Solar Water Heating", "Ample Parking"],
+        images: [
+            "/images/projects/tatu-city-maisonette/1.png",
+            "/images/projects/tatu-city-maisonette/2.png",
+            "/images/projects/tatu-city-maisonette/3.png",
+            "/images/projects/tatu-city-maisonette/4.png",
+            "/images/projects/tatu-city-maisonette/5.png"
+        ],
+        specs: {
+            "Project Type": "Residential Maisonette",
+            "Bedrooms": "4",
+            "Location": "Tatu City",
+            "Status": "Ongoing Construction",
+            "Started": "October 2024"
+        }
+    },
+    {
         id: 9,
         name: "Wild Residence",
         slug: "wild-residence",
