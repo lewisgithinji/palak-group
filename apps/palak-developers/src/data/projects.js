@@ -177,14 +177,14 @@ const projectsData = [
     },
     {
         id: 6,
-        name: "Luxury Bungalow in Runda",
-        slug: "runda-bungalow",
+        name: "Luxury Maisonette in Runda",
+        slug: "runda-maisonette",
         category: "Residential",
         status: "Completed",
         location: "Runda Mhasibu, Nairobi",
         timeline: { start: "January 2024", end: "February 2025" },
-        shortDesc: "5-bedroom luxury bungalow with premium amenities",
-        description: "An exquisite luxury bungalow in the prestigious Runda estate, featuring state-of-the-art amenities including a modern elevator, private gym, rooftop terrace, and beautifully landscaped grounds with eco-friendly waste management.",
+        shortDesc: "5-bedroom luxury maisonette with premium amenities",
+        description: "An exquisite luxury maisonette in the prestigious Runda estate, featuring state-of-the-art amenities including a modern elevator, private gym, rooftop terrace, and beautifully landscaped grounds with eco-friendly waste management.",
         features: [
             "5 spacious bedrooms with premium finishes",
             "7 modern bathrooms with luxury fittings",
@@ -203,8 +203,9 @@ const projectsData = [
         ],
         amenities: ["Modern Elevator", "Private Gym", "Rooftop Terrace", "Gazebo with Bar", "2 DSQ", "Biodigester", "Landscaping"],
         images: [
-            "/images/projects/runda-bungalow/1.jpg",
-            "/images/projects/runda-bungalow/2.jpg"
+            "/images/projects/runda-maisonette/1.jpg",
+            "/images/projects/runda-maisonette/2.jpg",
+            "/images/projects/runda-maisonette/3.png"
         ],
         specs: {
             "Bedrooms": "5",
@@ -318,47 +319,6 @@ const projectsData = [
             "Started": "October 2024"
         }
     },
-    {
-        id: 9,
-        name: "Wild Residence",
-        slug: "wild-residence",
-        category: "Residential",
-        status: "Completed",
-        location: "1st Parklands Avenue, Nairobi",
-        timeline: {
-            start: "Jan 2018",
-            end: "Dec 2020"
-        },
-        description: "A flagship 20-floor luxury apartment building setting a new standard for high-rise living in Nairobi. Wild Residence represents the pinnacle of modern residential construction with premium finishes, state-of-the-art amenities, and contemporary architectural design. This landmark tower features multiple luxury units with breathtaking city views, high-end fixtures, and a sophisticated lifestyle environment.",
-        features: [
-            "20-floor luxury high-rise tower",
-            "Prime 1st Parklands Avenue location",
-            "Contemporary architectural design with glass facades",
-            "Premium residential units with city views",
-            "State-of-the-art construction techniques",
-            "Multiple unit configurations available"
-        ],
-        amenities: [
-            "High-speed elevators",
-            "24/7 security with CCTV surveillance",
-            "Backup power generator",
-            "Modern elegant lobby",
-            "Fitness center",
-            "Visitor parking",
-            "Professional property management"
-        ],
-        specs: {
-            "Building Height": "20 Floors",
-            "Location": "1st Parklands Avenue, Nairobi",
-            "Type": "Luxury Residential Tower",
-            "Status": "Completed",
-            "Year Completed": "2020",
-            "Units": "Multiple luxury apartments"
-        },
-        images: [
-            '/images/projects/wild-residence/exterior-01.png'
-        ]
-    }
 ];
 
 // Helper functions for filtering
