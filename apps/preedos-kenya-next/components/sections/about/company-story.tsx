@@ -43,7 +43,7 @@ export function CompanyStory() {
                         <div
                             className="aspect-square rounded-3xl overflow-hidden bg-secondary-100"
                             style={{
-                                backgroundImage: 'url(/images/about-story.jpg)',
+                                backgroundImage: 'url(/images/preedos-factory.png)',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}
