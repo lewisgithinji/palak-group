@@ -8,9 +8,9 @@ import { CTASection } from '@/components/sections/cta-section'
 import { products, getProductBySlug } from '@/data'
 
 interface ProductPageProps {
-    params: {
+    params: Promise<{
         slug: string
-    }
+    }>
 }
 
 // Generate static paths for all products
@@ -21,7 +21,8 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for each product
-export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+export async function generateMetadata(props: ProductPageProps): Promise<Metadata> {
+    const params = await props.params;
     const product = getProductBySlug(params.slug)
 
     if (!product) {
@@ -41,7 +42,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     }
 }
 
-export default function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage(props: ProductPageProps) {
+    const params = await props.params;
     const product = getProductBySlug(params.slug)
 
     if (!product) {

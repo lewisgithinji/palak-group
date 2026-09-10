@@ -109,14 +109,14 @@ export default function PrivacyPage() {
                                 Your information may be transferred to and processed in countries other than Kenya, including China (for our partnership with HSFTECH). We ensure appropriate safeguards are in place to protect your information in accordance with this Privacy Policy.
                             </p>
 
-                            <h2 className="text-2xl font-heading font-bold text-secondary-900 mt-12 mb-4">9. Children's Privacy</h2>
+                            <h2 className="text-2xl font-heading font-bold text-secondary-900 mt-12 mb-4">9. Children&apos;s Privacy</h2>
                             <p className="text-secondary-600 mb-6">
                                 Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children.
                             </p>
 
                             <h2 className="text-2xl font-heading font-bold text-secondary-900 mt-12 mb-4">10. Changes to This Privacy Policy</h2>
                             <p className="text-secondary-600 mb-6">
-                                We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. We will notify you of significant changes by posting the updated policy on our website with a new "Last Updated" date.
+                                We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. We will notify you of significant changes by posting the updated policy on our website with a new &quot;Last Updated&quot; date.
                             </p>
 
                             <h2 className="text-2xl font-heading font-bold text-secondary-900 mt-12 mb-4">11. Contact Us</h2>

@@ -420,7 +420,7 @@ export default function EstimatePage() {
                                         Previous configuration loaded
                                     </p>
                                     <p className="text-sm text-blue-700">
-                                        We've restored your last estimate to save you time.
+                                        We&apos;ve restored your last estimate to save you time.
                                     </p>
                                 </div>
                             </div>

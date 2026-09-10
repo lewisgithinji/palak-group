@@ -2,6 +2,9 @@ import { MetadataRoute } from 'next'
 import { products } from '@/data/products'
 import { projects } from '@/data/projects'
 
+// Required by output: "export" in Next 15 — metadata routes must be static
+export const dynamic = "force-static"
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://preedos.ke'
 

@@ -8,9 +8,9 @@ import { CTASection } from '@/components/sections/cta-section'
 import { projects, getProjectBySlug } from '@/data'
 
 interface ProjectPageProps {
-    params: {
+    params: Promise<{
         slug: string
-    }
+    }>
 }
 
 // Generate static paths for all projects
@@ -21,7 +21,8 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for each project
-export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
+export async function generateMetadata(props: ProjectPageProps): Promise<Metadata> {
+    const params = await props.params;
     const project = getProjectBySlug(params.slug)
 
     if (!project) {
@@ -41,7 +42,8 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     }
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
+export default async function ProjectPage(props: ProjectPageProps) {
+    const params = await props.params;
     const project = getProjectBySlug(params.slug)
 
     if (!project) {

@@ -70,7 +70,7 @@ export function ContactFormCompact() {
                                     Message Sent Successfully!
                                 </h3>
                                 <p className="text-green-700 text-sm mb-4">
-                                    Thank you for reaching out. We'll contact you within 24 hours.
+                                    Thank you for reaching out. We&apos;ll contact you within 24 hours.
                                 </p>
                                 <Button variant="outline" size="sm" onClick={() => setFormState('idle')}>
                                     Send Another Message

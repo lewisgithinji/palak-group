@@ -28,7 +28,7 @@ export default function TermsPage() {
                     <div className="container-custom max-w-4xl">
                         <div className="prose prose-lg max-w-none">
                             <p className="lead text-xl text-secondary-700 mb-8">
-                                These Terms of Service ("Terms") govern your use of the {SITE_CONFIG.name} website and services. By accessing or using our services, you agree to be bound by these Terms.
+                                These Terms of Service (&quot;Terms&quot;) govern your use of the {SITE_CONFIG.name} website and services. By accessing or using our services, you agree to be bound by these Terms.
                             </p>
 
                             <h2 className="text-2xl font-heading font-bold text-secondary-900 mt-12 mb-4">1. Acceptance of Terms</h2>
@@ -127,7 +127,7 @@ export default function TermsPage() {
 
                             <h2 className="text-2xl font-heading font-bold text-secondary-900 mt-12 mb-4">12. Termination</h2>
                             <p className="text-secondary-600 mb-6">
-                                We reserve the right to terminate or suspend access to our services for violation of these Terms, non-payment, or any other reason at our discretion. Maintenance contracts may be terminated by either party with 30 days' written notice.
+                                We reserve the right to terminate or suspend access to our services for violation of these Terms, non-payment, or any other reason at our discretion. Maintenance contracts may be terminated by either party with 30 days&apos; written notice.
                             </p>
 
                             <h2 className="text-2xl font-heading font-bold text-secondary-900 mt-12 mb-4">13. Dispute Resolution</h2>
@@ -142,7 +142,7 @@ export default function TermsPage() {
 
                             <h2 className="text-2xl font-heading font-bold text-secondary-900 mt-12 mb-4">15. Changes to Terms</h2>
                             <p className="text-secondary-600 mb-6">
-                                We reserve the right to modify these Terms at any time. Changes will be effective upon posting to our website with an updated "Last Updated" date. Your continued use of our services after changes constitutes acceptance of the modified Terms.
+                                We reserve the right to modify these Terms at any time. Changes will be effective upon posting to our website with an updated &quot;Last Updated&quot; date. Your continued use of our services after changes constitutes acceptance of the modified Terms.
                             </p>
 
                             <h2 className="text-2xl font-heading font-bold text-secondary-900 mt-12 mb-4">16. Severability</h2>
