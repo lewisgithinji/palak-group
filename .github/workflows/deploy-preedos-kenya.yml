@@ -1,13 +1,9 @@
 name: Deploy Preedos Kenya to Cloudflare Pages
 
+# Manual only (2026-09-10). The live sites now build from their own repos
+# (palak-developers, Palak-steel-mill, preedos), and these app copies are older.
+# On push, this workflow uploaded the stale copy over the live project.
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'apps/preedos-kenya/**'
-      - 'packages/**'
-      - 'pnpm-lock.yaml'
   workflow_dispatch:
 
 permissions:
